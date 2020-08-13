@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>INSSlab_Polymer</defName>
+    <label>Insulation slab (polymers)</label>
+    <description>Insulation material formed into a workable slab. Can be recycled for 50% chemfuel.</description>
+    <graphicData>
+      <texPath>Things/Item/INSSlab_Polymer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>9.2</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.2</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>INS_Insulation</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <techLevel>Industrial</techLevel>
+  </ThingDef>
+  <RecipeDef>
+    <defName>Make_INSSlab_Polymer</defName>
+    <label>Make Insulation slabs (polymers)</label>
+    <description>Make 5 Insulation slabs (polymers).</description>
+    <workAmount>250</workAmount>
+    <jobString>Making insulation slabs.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <workSkill>Intellectual</workSkill>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+    <researchPrerequisite>InsulationPolymers</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <INSSlab_Polymer>5</INSSlab_Polymer>
+    </products>
+    <skillRequirements>
+      <Intellectual>4</Intellectual>
+    </skillRequirements>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>MakeBulk_INSSlab_Polymer</defName>
+    <label>Make Insulation slabs (polymers) in bulk</label>
+    <description>Make 25 Insulation slabs (polymers).</description>
+    <workAmount>1250</workAmount>
+    <jobString>Making insulation slabs.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <targetCountAdjustment>25</targetCountAdjustment>
+    <workSkill>Intellectual</workSkill>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+    <researchPrerequisite>InsulationPolymers</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <products>
+      <INSSlab_Polymer>25</INSSlab_Polymer>
+    </products>
+    <skillRequirements>
+      <Intellectual>5</Intellectual>
+    </skillRequirements>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>Recycle_INSSlab_Polymer</defName>
+    <label>Recycle Insulation slabs (polymers)</label>
+    <description>Recycling 25 Insulation slabs (polymers).</description>
+    <workAmount>1250</workAmount>
+    <jobString>Recycling insulation slabs.</jobString>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <targetCountAdjustment>50</targetCountAdjustment>
+    <workSkill>Intellectual</workSkill>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>INSSlab_Polymer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+    <researchPrerequisite>InsulationPolymers</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>INSSlab_Polymer</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <Chemfuel>50</Chemfuel>
+    </products>
+    <skillRequirements>
+      <Intellectual>5</Intellectual>
+    </skillRequirements>
+  </RecipeDef>
+</Defs>

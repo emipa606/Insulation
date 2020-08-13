@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <INSDoorSimple_Polymer.label>Insulated Door (Polymer)</INSDoorSimple_Polymer.label>
+  <INSDoorSimple_Polymer.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Polymer.description>
+  <INSDoorSimple_Polymer_Blueprint.label>Insulated Door (Polymer) (blueprint)</INSDoorSimple_Polymer_Blueprint.label>
+  <INSDoorSimple_Polymer_Frame.label>Insulated Door (Polymer) (building)</INSDoorSimple_Polymer_Frame.label>
+  <INSDoorSimple_Polymer_Frame.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Polymer_Frame.description>
+
+  <INSDoor_Polymer.label>Insulated Autodoor (Polymer)</INSDoor_Polymer.label>
+  <INSDoor_Polymer.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Polymer.description>
+  <INSDoor_Polymer_Blueprint.label>Insulated Autodoor (Polymer) (blueprint)</INSDoor_Polymer_Blueprint.label>
+  <INSDoor_Polymer_Frame.label>Insulated Autodoor (Polymer) (building)</INSDoor_Polymer_Frame.label>
+  <INSDoor_Polymer_Frame.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Polymer_Frame.description>
+
+
+</LanguageData>

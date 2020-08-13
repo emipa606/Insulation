@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSWall_Polymer.label>隔热墙(高分子聚合材质)</INSWall_Polymer.label>
+  <INSWall_Polymer.description>一面无法通过的墙。可以支撑起屋顶。该墙的隔热性能是用人工合成的高分子聚合材质实现的。</INSWall_Polymer.description>
+  <INSWall_Polymer_Blueprint.label>隔热墙(高分子聚合材质)(蓝图)</INSWall_Polymer_Blueprint.label>
+  <INSWall_Polymer_Frame.label>隔热墙(高分子聚合材质)(建造中)</INSWall_Polymer_Frame.label>
+  <INSWall_Polymer_Frame.description>一面无法通过的墙。可以支撑起屋顶。该墙的隔热性能是用人工合成的高分子聚合材质实现的。</INSWall_Polymer_Frame.description>
+</LanguageData>

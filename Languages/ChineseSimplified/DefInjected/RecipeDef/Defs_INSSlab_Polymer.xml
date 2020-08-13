@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Make_INSSlab_Polymer.label>制作隔热板(高分子聚合材质)</Make_INSSlab_Polymer.label>
+  <Make_INSSlab_Polymer.description>制作5块隔热板(高分子聚合材质)。</Make_INSSlab_Polymer.description>
+  <Make_INSSlab_Polymer.jobString>正在制作隔热板(高分子聚合材质)</Make_INSSlab_Polymer.jobString>
+  <MakeBulk_INSSlab_Polymer.label>批量制作隔热板(高分子聚合材质)</MakeBulk_INSSlab_Polymer.label>
+  <MakeBulk_INSSlab_Polymer.description>制作25块隔热板(高分子聚合材质)。</MakeBulk_INSSlab_Polymer.description>
+  <MakeBulk_INSSlab_Polymer.jobString>正在批量制作隔热板(高分子聚合材质)。</MakeBulk_INSSlab_Polymer.jobString>
+  <Recycle_INSSlab_Polymer.label>拆解隔热板(高分子聚合材质)</Recycle_INSSlab_Polymer.label>
+  <Recycle_INSSlab_Polymer.description>拆解25块隔热板(高分子聚合材质)。</Recycle_INSSlab_Polymer.description>
+  <Recycle_INSSlab_Polymer.jobString>正在拆解隔热板(高分子聚合材质)。</Recycle_INSSlab_Polymer.jobString>
+</LanguageData>

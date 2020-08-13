@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Make_INSSlab_Biomass.label>断熱材（干し草)を5個作る</Make_INSSlab_Biomass.label>
+  <Make_INSSlab_Biomass.description>断熱材（干し草)を5個作る。</Make_INSSlab_Biomass.description>
+  <Make_INSSlab_Biomass.jobString>断熱材を製作中</Make_INSSlab_Biomass.jobString>
+  <MakeBulk_INSSlab_Biomass.label>断熱材（干し草)を25個作る</MakeBulk_INSSlab_Biomass.label>
+  <MakeBulk_INSSlab_Biomass.description>断熱材（干し草)を25個作る。</MakeBulk_INSSlab_Biomass.description>
+  <MakeBulk_INSSlab_Biomass.jobString>断熱材を製作中</MakeBulk_INSSlab_Biomass.jobString>
+</LanguageData>

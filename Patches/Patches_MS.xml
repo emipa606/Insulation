@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Medical Supplements</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <RecipeDef>
+              <defName>Recycle_INSSlab_Hyper</defName>
+              <label>Recycle Insulation slabs (Hyper)</label>
+              <description>Recycling 5 Insulation slabs (Hyper).</description>
+              <workAmount>5000</workAmount>
+              <jobString>Recycling insulation slabs.</jobString>
+              <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+              <effectWorking>Cremate</effectWorking>
+              <soundWorking>Recipe_Cremate</soundWorking>
+              <allowMixingIngredients>true</allowMixingIngredients>
+              <targetCountAdjustment>5</targetCountAdjustment>
+              <workSkill>Intellectual</workSkill>
+              <fixedIngredientFilter>
+                <thingDefs>
+                  <li>INSSlab_Hyper</li>
+                  <li>MedicineIndustrial</li>
+                  <li>Neutroamine</li>
+                </thingDefs>
+              </fixedIngredientFilter>
+              <recipeUsers>
+                <li>DrugLab</li>
+              </recipeUsers>
+              <researchPrerequisite>MSMedicineUltra</researchPrerequisite>
+              <ingredients>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>INSSlab_Hyper</li>
+                    </thingDefs>
+                  </filter>
+                  <count>25</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>MedicineIndustrial</li>
+                    </thingDefs>
+                  </filter>
+                  <count>5</count>
+                </li>
+                <li>
+                  <filter>
+                    <thingDefs>
+                      <li>Neutroamine</li>
+                    </thingDefs>
+                  </filter>
+                  <count>10</count>
+                </li>
+              </ingredients>
+              <products>
+                <MedicineUltratech>5</MedicineUltratech>
+              </products>
+              <skillRequirements>
+                <Intellectual>10</Intellectual>
+              </skillRequirements>
+            </RecipeDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

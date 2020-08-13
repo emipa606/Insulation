@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSDoorSimple_Hyper.label>隔热门(超世代材质)</INSDoorSimple_Hyper.label>
+  <INSDoorSimple_Hyper.description>分隔房间的隔热门。只能手动开关，会减慢人的速度。到底有多慢取决于门的材质。</INSDoorSimple_Hyper.description>
+  <INSDoorSimple_Hyper_Blueprint.label>隔热门(超世代材质)(蓝图)</INSDoorSimple_Hyper_Blueprint.label>
+  <INSDoorSimple_Hyper_Frame.label>隔热门(超世代材质)(建造中)</INSDoorSimple_Hyper_Frame.label>
+  <INSDoorSimple_Hyper_Frame.description>分隔房间的隔热门。只能手动开关，会减慢人的速度。到底有多慢取决于门的材质。</INSDoorSimple_Hyper_Frame.description>
+  <INSDoor_Hyper.label>隔热自动门(超世代材质)</INSDoor_Hyper.label>
+  <INSDoor_Hyper.description>分隔房间的隔热自动门。电力运转，人穿过门不会减速。</INSDoor_Hyper.description>
+  <INSDoor_Hyper_Blueprint.label>隔热自动门(超世代材质)(蓝图)</INSDoor_Hyper_Blueprint.label>
+  <INSDoor_Hyper_Frame.label>隔热自动门(超世代材质)(建造中)</INSDoor_Hyper_Frame.label>
+  <INSDoor_Hyper_Frame.description>分隔房间的隔热自动门。电力运转，人穿过门不会减速。</INSDoor_Hyper_Frame.description>
+</LanguageData>

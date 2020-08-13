@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Make_INSSlab_Polymer.label>Make Insulation slabs (polymers)</Make_INSSlab_Polymer.label>
+  <Make_INSSlab_Polymer.description>Make 5 Insulation slabs (polymers).</Make_INSSlab_Polymer.description>
+  <Make_INSSlab_Polymer.jobString>Making insulation slabs.</Make_INSSlab_Polymer.jobString>
+
+  <MakeBulk_INSSlab_Polymer.label>Make Insulation slabs (polymers) in bulk</MakeBulk_INSSlab_Polymer.label>
+  <MakeBulk_INSSlab_Polymer.description>Make 25 Insulation slabs (polymers).</MakeBulk_INSSlab_Polymer.description>
+  <MakeBulk_INSSlab_Polymer.jobString>Making insulation slabs.</MakeBulk_INSSlab_Polymer.jobString>
+
+  <Recycle_INSSlab_Polymer.label>Recycle Insulation slabs (polymers)</Recycle_INSSlab_Polymer.label>
+  <Recycle_INSSlab_Polymer.description>Recycling 25 Insulation slabs (polymers).</Recycle_INSSlab_Polymer.description>
+  <Recycle_INSSlab_Polymer.jobString>Recycling insulation slabs.</Recycle_INSSlab_Polymer.jobString>
+
+
+</LanguageData>

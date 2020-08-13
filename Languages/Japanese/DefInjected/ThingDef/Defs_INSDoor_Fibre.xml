@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSDoorSimple_Fibre.label>断熱ドア (繊維)</INSDoorSimple_Fibre.label>
+  <INSDoorSimple_Fibre.description>部屋を隔てる断熱扉です。手動で開閉する必要があるので移動が遅くなります。どの程度遅くなるかはドアの材料によって決定されます。</INSDoorSimple_Fibre.description>
+  <Blueprint_INSDoorSimple_Fibre.label>断熱ドア (繊維) (設計)</Blueprint_INSDoorSimple_Fibre.label>
+  <Frame_INSDoorSimple_Fibre.label>断熱ドア (繊維) (施工)</Frame_INSDoorSimple_Fibre.label>
+  <Frame_INSDoorSimple_Fibre.description>部屋を隔てる断熱扉です。手動で開閉する必要があるので移動が遅くなります。どの程度遅くなるかはドアの材料によって決定されます。</Frame_INSDoorSimple_Fibre.description>
+  <INSDoor_Fibre.label>断熱自動ドア (繊維)</INSDoor_Fibre.label>
+  <INSDoor_Fibre.description>部屋を仕切る断熱自動扉です。電動式の開閉装置によって減速せずにドアを通過できます。</INSDoor_Fibre.description>
+  <Blueprint_INSDoor_Fibre.label>断熱自動ドア (繊維) (設計)</Blueprint_INSDoor_Fibre.label>
+  <Frame_INSDoor_Fibre.label>断熱自動ドア (繊維) (施工)</Frame_INSDoor_Fibre.label>
+  <Frame_INSDoor_Fibre.description>部屋を仕切る断熱自動扉です。電動式の開閉装置によって減速せずにドアを通過できます。</Frame_INSDoor_Fibre.description>
+</LanguageData>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Make_INSSlab_Biomass.label>制作隔热板(有机材质)</Make_INSSlab_Biomass.label>
+  <Make_INSSlab_Biomass.description>制作5块隔热板(有机材质)。</Make_INSSlab_Biomass.description>
+  <Make_INSSlab_Biomass.jobString>正在制作隔热板(有机材质)。</Make_INSSlab_Biomass.jobString>
+  <MakeBulk_INSSlab_Biomass.label>批量制作隔热板(有机材质)</MakeBulk_INSSlab_Biomass.label>
+  <MakeBulk_INSSlab_Biomass.description>制作25块隔热板(有机材质)。</MakeBulk_INSSlab_Biomass.description>
+  <MakeBulk_INSSlab_Biomass.jobString>正在批量制作隔热板(有机材质)。</MakeBulk_INSSlab_Biomass.jobString>
+</LanguageData>

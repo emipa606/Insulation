@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Make_INSSlab_Fibre.label>断熱材（繊維)を5個作る</Make_INSSlab_Fibre.label>
+  <Make_INSSlab_Fibre.description>断熱材（繊維)を5個作る。</Make_INSSlab_Fibre.description>
+  <Make_INSSlab_Fibre.jobString>断熱材を製作中</Make_INSSlab_Fibre.jobString>
+  <MakeBulk_INSSlab_Fibre.label>断熱材（繊維)を25個作る</MakeBulk_INSSlab_Fibre.label>
+  <MakeBulk_INSSlab_Fibre.description>断熱材（繊維)を25個作る。</MakeBulk_INSSlab_Fibre.description>
+  <MakeBulk_INSSlab_Fibre.jobString>断熱材を製作中</MakeBulk_INSSlab_Fibre.jobString>
+  <Recycle_INSSlab_Fibre.label>断熱材（繊維)をリサイクルする</Recycle_INSSlab_Fibre.label>
+  <Recycle_INSSlab_Fibre.description>断熱材（繊維)を5個リサイクルする。</Recycle_INSSlab_Fibre.description>
+  <Recycle_INSSlab_Fibre.jobString>断熱材をリサイクル中</Recycle_INSSlab_Fibre.jobString>
+</LanguageData>

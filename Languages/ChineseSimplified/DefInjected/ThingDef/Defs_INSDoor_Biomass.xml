@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSDoorSimple_Biomass.label>隔热门(有机材质)</INSDoorSimple_Biomass.label>
+  <INSDoorSimple_Biomass.description>分隔房间的隔热门。只能手动开关，会减慢人的速度。到底有多慢取决于门的材质。</INSDoorSimple_Biomass.description>
+  <INSDoorSimple_Biomass_Blueprint.label>隔热门(有机材质)(蓝图)</INSDoorSimple_Biomass_Blueprint.label>
+  <INSDoorSimple_Biomass_Frame.label>隔热门(有机材质)(建造中)</INSDoorSimple_Biomass_Frame.label>
+  <INSDoorSimple_Biomass_Frame.description>分隔房间的隔热门。只能手动开关，会减慢人的速度。到底有多慢取决于门的材质。</INSDoorSimple_Biomass_Frame.description>
+  <INSDoor_Biomass.label>隔热自动门(有机材质)</INSDoor_Biomass.label>
+  <INSDoor_Biomass.description>分隔房间的隔热自动门。电力运转，人穿过门不会减速。</INSDoor_Biomass.description>
+  <INSDoor_Biomass_Blueprint.label>隔热自动门(有机材质)(蓝图)</INSDoor_Biomass_Blueprint.label>
+  <INSDoor_Biomass_Frame.label>隔热自动门(有机材质)(建造中)</INSDoor_Biomass_Frame.label>
+  <INSDoor_Biomass_Frame.description>分隔房间的隔热自动门。电力运转，人穿过门不会减速。</INSDoor_Biomass_Frame.description>
+</LanguageData>

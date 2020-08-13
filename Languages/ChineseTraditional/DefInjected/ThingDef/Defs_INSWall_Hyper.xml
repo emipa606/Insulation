@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSWall_Hyper.label>隔热墙(超世代材质)</INSWall_Hyper.label>
+  <INSWall_Hyper.description>一面无法通过的墙。可以支撑起屋顶。该墙的隔热性能是用先进材料实现的。</INSWall_Hyper.description>
+  <INSWall_Hyper_Blueprint.label>隔热墙(超世代材质)(蓝图)</INSWall_Hyper_Blueprint.label>
+  <INSWall_Hyper_Frame.label>隔热墙(超世代材质)(建造中)</INSWall_Hyper_Frame.label>
+  <INSWall_Hyper_Frame.description>一面无法通过的墙。可以支撑起屋顶。该墙的隔热性能是用先进材料实现的。</INSWall_Hyper_Frame.description>
+</LanguageData>

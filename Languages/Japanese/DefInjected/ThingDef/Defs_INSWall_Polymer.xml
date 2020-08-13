@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSWall_Polymer.label>断熱壁 (ポリマー)</INSWall_Polymer.label>
+  <INSWall_Polymer.description>屋根を支えることが可能な通行不可能な壁です。この壁は合成ポリマーで断熱されています。</INSWall_Polymer.description>
+  <Blueprint_INSWall_Polymer.label>断熱壁 (ポリマー) (設計)</Blueprint_INSWall_Polymer.label>
+  <Frame_INSWall_Polymer.label>断熱壁 (ポリマー) (施工)</Frame_INSWall_Polymer.label>
+  <Frame_INSWall_Polymer.description>屋根を支えることが可能な通行不可能な壁です。この壁は合成ポリマーで断熱されています。</Frame_INSWall_Polymer.description>
+</LanguageData>

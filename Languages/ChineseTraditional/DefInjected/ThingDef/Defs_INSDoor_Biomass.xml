@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSDoorSimple_Biomass.label>隔熱門（有機材質）</INSDoorSimple_Biomass.label>
+  <INSDoorSimple_Biomass.description>分隔房間的隔熱門。只能手動開關，會减慢人的速度。到底有多慢取決於門的材質。</INSDoorSimple_Biomass.description>
+  <INSDoorSimple_Biomass_Blueprint.label>隔熱門（有機材質）（藍圖）</INSDoorSimple_Biomass_Blueprint.label>
+  <INSDoorSimple_Biomass_Frame.label>隔熱門（有機材質）（建造中）</INSDoorSimple_Biomass_Frame.label>
+  <INSDoorSimple_Biomass_Frame.description>分隔房間的隔熱門。只能手動開關，會减慢人的速度。到底有多慢取決於門的材質。</INSDoorSimple_Biomass_Frame.description>
+  <INSDoor_Biomass.label>隔熱自動門（有機材質）</INSDoor_Biomass.label>
+  <INSDoor_Biomass.description>分隔房間的隔熱自動門。電力運轉，人穿過門不會减速。</INSDoor_Biomass.description>
+  <INSDoor_Biomass_Blueprint.label>隔熱自動門（有機材質）（藍圖）</INSDoor_Biomass_Blueprint.label>
+  <INSDoor_Biomass_Frame.label>隔熱自動門（有機材質）（建造中）</INSDoor_Biomass_Frame.label>
+  <INSDoor_Biomass_Frame.description>分隔房間的隔熱自動門。電力運轉，人穿過門不會减速。</INSDoor_Biomass_Frame.description>
+</LanguageData>

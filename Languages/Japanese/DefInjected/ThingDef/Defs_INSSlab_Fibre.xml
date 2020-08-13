@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSSlab_Fibre.label>断熱材（繊維)</INSSlab_Fibre.label>
+  <INSSlab_Fibre.description>作業しやすい断熱板に加工された断熱材です。黄麻布(おうまふ)にリサイクルできます。</INSSlab_Fibre.description>
+  <INS_Burlap.label>黄麻布</INS_Burlap.label>
+  <INS_Burlap.description>断熱繊維で織った粗い繊維の布(おうまふ)です。布に似ていますが、断熱性に優れています。</INS_Burlap.description>
+  <INS_Burlap.stuffProps.stuffAdjective>黄麻布</INS_Burlap.stuffProps.stuffAdjective>
+</LanguageData>

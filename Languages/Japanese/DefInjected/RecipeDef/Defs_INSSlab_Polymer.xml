@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Make_INSSlab_Polymer.label>断熱材（ポリマー)を5個作る</Make_INSSlab_Polymer.label>
+  <Make_INSSlab_Polymer.description>断熱材（ポリマー)を5個作る。</Make_INSSlab_Polymer.description>
+  <Make_INSSlab_Polymer.jobString>断熱材を製作中</Make_INSSlab_Polymer.jobString>
+  <MakeBulk_INSSlab_Polymer.label>断熱材（ポリマー)を25個作る</MakeBulk_INSSlab_Polymer.label>
+  <MakeBulk_INSSlab_Polymer.description>断熱材（ポリマー樹脂)を25個作る。</MakeBulk_INSSlab_Polymer.description>
+  <MakeBulk_INSSlab_Polymer.jobString>断熱材を製作中</MakeBulk_INSSlab_Polymer.jobString>
+  <Recycle_INSSlab_Polymer.label>断熱材（ポリマー)をリサイクルする</Recycle_INSSlab_Polymer.label>
+  <Recycle_INSSlab_Polymer.description>断熱材（ポリマー)を25個リサイクルする</Recycle_INSSlab_Polymer.description>
+  <Recycle_INSSlab_Polymer.jobString>断熱材をリサイクル中</Recycle_INSSlab_Polymer.jobString>
+</LanguageData>

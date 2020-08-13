@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Make_INSSlab_Biomass.label>製作隔熱板（有機材質）</Make_INSSlab_Biomass.label>
+  <Make_INSSlab_Biomass.description>製作5塊隔熱板（有機材質）。</Make_INSSlab_Biomass.description>
+  <Make_INSSlab_Biomass.jobString>正在製作隔熱板（有機材質）。</Make_INSSlab_Biomass.jobString>
+  <MakeBulk_INSSlab_Biomass.label>批量製作隔熱板（有機材質）</MakeBulk_INSSlab_Biomass.label>
+  <MakeBulk_INSSlab_Biomass.description>製作25塊隔熱板（有機材質）。</MakeBulk_INSSlab_Biomass.description>
+  <MakeBulk_INSSlab_Biomass.jobString>正在批量製作隔熱板（有機材質）。</MakeBulk_INSSlab_Biomass.jobString>
+</LanguageData>

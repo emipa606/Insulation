@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="INSDoor_Base">
+    <defName>INSDoorSimple_Fibre</defName>
+    <label>Insulated Door (Fibre)</label>
+    <description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.1</Flammability>
+    </statBases>
+    <blockWind>true</blockWind>
+    <graphicData>
+      <texPath>Things/Building/Door/INSDoor_Fibre/INSDoorSimple_Fibre_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/INSDoor_Fibre/INSDoorSimple_Fibre_MenuIcon</uiIconPath>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/INSDoor_Fibre/INSDoor_Fibre_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <costStuffCount>20</costStuffCount>
+    <costList>
+      <INSSlab_Fibre>10</INSSlab_Fibre>
+    </costList>
+    <designationHotKey>Misc1</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <comps>
+      <li Class="Insulation.CompProperties_BuildInsulation">
+        <HeatTransferFactor>0.40</HeatTransferFactor>
+        <InsulationStuff>true</InsulationStuff>
+        <HitPointsNeed>0.25</HitPointsNeed>
+      </li>
+    </comps>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>InsulationFibres</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="INSDoor_Base">
+    <defName>INSDoor_Fibre</defName>
+    <label>Insulated Autodoor (Fibre)</label>
+    <description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+    <statBases>
+      <WorkToBuild>1250</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.1</Flammability>
+    </statBases>
+    <blockWind>true</blockWind>
+    <graphicData>
+      <texPath>Things/Building/Door/INSDoor_Fibre/INSDoor_Fibre_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/INSDoor_Fibre/INSDoor_Fibre_MenuIcon</uiIconPath>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/INSDoor_Fibre/INSDoor_Fibre_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <costList>
+      <Steel>30</Steel>
+      <INSSlab_Fibre>10</INSSlab_Fibre>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <costStuffCount>25</costStuffCount>
+    <techLevel>Industrial</techLevel>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Insulation.CompProperties_BuildInsulation">
+        <HeatTransferFactor>0.40</HeatTransferFactor>
+        <InsulationStuff>true</InsulationStuff>
+        <HitPointsNeed>0.25</HitPointsNeed>
+      </li>
+    </comps>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>InsulationFibres</li>
+      <li>Autodoors</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>

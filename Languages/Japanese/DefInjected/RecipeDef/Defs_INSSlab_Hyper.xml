@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Make_INSSlab_Hyper.label>超断熱材を5個作る</Make_INSSlab_Hyper.label>
+  <Make_INSSlab_Hyper.description>超断熱材を5個作る。</Make_INSSlab_Hyper.description>
+  <Make_INSSlab_Hyper.jobString>超断熱材を製作中</Make_INSSlab_Hyper.jobString>
+  <MakeBulk_INSSlab_Hyper.label>超断熱材を25個作る</MakeBulk_INSSlab_Hyper.label>
+  <MakeBulk_INSSlab_Hyper.description>超断熱材を25個作る。</MakeBulk_INSSlab_Hyper.description>
+  <MakeBulk_INSSlab_Hyper.jobString>超断熱材を製作中</MakeBulk_INSSlab_Hyper.jobString>
+</LanguageData>

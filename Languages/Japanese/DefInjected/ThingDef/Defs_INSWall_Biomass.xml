@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSWall_Biomass.label>断熱壁 (干し草)</INSWall_Biomass.label>
+  <INSWall_Biomass.description>屋根を支えることが可能な通行不可能な壁です。この壁は干し草で断熱されています。</INSWall_Biomass.description>
+  <Blueprint_INSWall_Biomass.label>断熱壁 (干し草) (設計)</Blueprint_INSWall_Biomass.label>
+  <Frame_INSWall_Biomass.label>断熱壁 (干し草) (施工)</Frame_INSWall_Biomass.label>
+  <Frame_INSWall_Biomass.description>屋根を支えることが可能な通行不可能な壁です。この壁は干し草で断熱されています。</Frame_INSWall_Biomass.description>
+</LanguageData>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSDoorSimple_Fibre.label>隔热门(纤维材质)</INSDoorSimple_Fibre.label>
+  <INSDoorSimple_Fibre.description>分隔房间的隔热门。只能手动开关，会减慢人的速度。到底有多慢取决于门的材质。</INSDoorSimple_Fibre.description>
+  <INSDoorSimple_Fibre_Blueprint.label>隔热门(纤维材质)(蓝图)</INSDoorSimple_Fibre_Blueprint.label>
+  <INSDoorSimple_Fibre_Frame.label>隔热门(纤维材质)(建造中)</INSDoorSimple_Fibre_Frame.label>
+  <INSDoorSimple_Fibre_Frame.description>分隔房间的隔热门。只能手动开关，会减慢人的速度。到底有多慢取决于门的材质。</INSDoorSimple_Fibre_Frame.description>
+  <INSDoor_Fibre.label>隔热自动门(纤维材质)</INSDoor_Fibre.label>
+  <INSDoor_Fibre.description>分隔房间的隔热自动门。电力运转，人穿过门不会减速。</INSDoor_Fibre.description>
+  <INSDoor_Fibre_Blueprint.label>隔热自动门(纤维材质)(蓝图)</INSDoor_Fibre_Blueprint.label>
+  <INSDoor_Fibre_Frame.label>隔热自动门(纤维材质)(建造中)</INSDoor_Fibre_Frame.label>
+  <INSDoor_Fibre_Frame.description>分隔房间的隔热自动门。电力运转，人穿过门不会减速。</INSDoor_Fibre_Frame.description>
+</LanguageData>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSDoorSimple_Polymer.label>断熱ドア (ポリマー)</INSDoorSimple_Polymer.label>
+  <INSDoorSimple_Polymer.description>部屋を隔てる断熱扉です。手動で開閉する必要があるので移動が遅くなります。どの程度遅くなるかはドアの材料によって決定されます。</INSDoorSimple_Polymer.description>
+  <Blueprint_INSDoorSimple_Polymer.label>断熱ドア (ポリマー) (設計)</Blueprint_INSDoorSimple_Polymer.label>
+  <Frame_INSDoorSimple_Polymer.label>断熱ドア (ポリマー) (施工)</Frame_INSDoorSimple_Polymer.label>
+  <Frame_INSDoorSimple_Polymer.description>部屋を隔てる断熱扉です。手動で開閉する必要があるので移動が遅くなります。どの程度遅くなるかはドアの材料によって決定されます。</Frame_INSDoorSimple_Polymer.description>
+  <INSDoor_Polymer.label>断熱自動ドア (ポリマー)</INSDoor_Polymer.label>
+  <INSDoor_Polymer.description>部屋を仕切る断熱自動扉です。電動式の開閉装置によって減速せずにドアを通過できます。</INSDoor_Polymer.description>
+  <Blueprint_INSDoor_Polymer.label>断熱自動ドア (ポリマー) (設計)</Blueprint_INSDoor_Polymer.label>
+  <Frame_INSDoor_Polymer.label>断熱自動ドア (ポリマー) (施工)</Frame_INSDoor_Polymer.label>
+  <Frame_INSDoor_Polymer.description>部屋を仕切る断熱自動扉です。電動式の開閉装置によって減速せずにドアを通過できます。</Frame_INSDoor_Polymer.description>
+</LanguageData>

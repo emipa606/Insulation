@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSDoorSimple_Hyper.label>超断熱ドア</INSDoorSimple_Hyper.label>
+  <INSDoorSimple_Hyper.description>部屋を隔てる断熱扉です。手動で開閉する必要があるので移動が遅くなります。どの程度遅くなるかはドアの材料によって決定されます。</INSDoorSimple_Hyper.description>
+  <Blueprint_INSDoorSimple_Hyper.label>超断熱ドア (設計)</Blueprint_INSDoorSimple_Hyper.label>
+  <Frame_INSDoorSimple_Hyper.label>超断熱ドア (施工)</Frame_INSDoorSimple_Hyper.label>
+  <Frame_INSDoorSimple_Hyper.description>部屋を隔てる断熱扉です。手動で開閉する必要があるので移動が遅くなります。どの程度遅くなるかはドアの材料によって決定されます。</Frame_INSDoorSimple_Hyper.description>
+  <INSDoor_Hyper.label>超断熱 自動ドア</INSDoor_Hyper.label>
+  <INSDoor_Hyper.description>部屋を仕切る断熱自動扉です。電動式の開閉装置によって減速せずにドアを通過できます。</INSDoor_Hyper.description>
+  <Blueprint_INSDoor_Hyper.label>超断熱 自動ドア (設計)</Blueprint_INSDoor_Hyper.label>
+  <Frame_INSDoor_Hyper.label>超断熱 自動ドア (施工)</Frame_INSDoor_Hyper.label>
+  <Frame_INSDoor_Hyper.description>部屋を仕切る断熱自動扉です。電動式の開閉装置によって減速せずにドアを通過できます。</Frame_INSDoor_Hyper.description>
+</LanguageData>

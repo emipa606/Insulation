@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <InsulationBiomass.label>断熱材 (干し草)</InsulationBiomass.label>
+  <InsulationBiomass.description>壁やドアに干し草などの有機物と泥など混ぜたもので断熱性を与えます。</InsulationBiomass.description>
+  <InsulationFibres.label>断熱材 (繊維)</InsulationFibres.label>
+  <InsulationFibres.description>壁やドアに布や皮などの繊維で断熱性を与えます。</InsulationFibres.description>
+  <InsulationPolymers.label>断熱材 (ポリマー)</InsulationPolymers.label>
+  <InsulationPolymers.description>壁やドアにバイオ液化燃料から生成したポリマー樹脂で断熱性を与えます。</InsulationPolymers.description>
+  <InsulationHyper.label>超断熱材</InsulationHyper.label>
+  <InsulationHyper.description>壁やドアに高度な先進素材で効果的な断熱性を与えます。</InsulationHyper.description>
+</LanguageData>

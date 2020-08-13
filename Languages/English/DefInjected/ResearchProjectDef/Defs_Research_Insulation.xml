@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <InsulationBiomass.label>Insulation (Biomass)</InsulationBiomass.label>
+  <InsulationBiomass.description>Grants the ability to insulate walls and doors with biomass.</InsulationBiomass.description>
+
+  <InsulationFibres.label>Insulation (Fibres)</InsulationFibres.label>
+  <InsulationFibres.description>Grants the ability to insulate walls and doors with fibres.</InsulationFibres.description>
+
+  <InsulationPolymers.label>Insulation (Polymers)</InsulationPolymers.label>
+  <InsulationPolymers.description>Grants the ability to insulate walls and doors with synthetic polymers.</InsulationPolymers.description>
+
+  <InsulationHyper.label>Insulation (Hyper)</InsulationHyper.label>
+  <InsulationHyper.description>Grants the ability to insulate walls and doors with advanced materials.</InsulationHyper.description>
+
+
+</LanguageData>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <INSDoorSimple_Biomass.label>断熱ドア (干し草)</INSDoorSimple_Biomass.label>
+  <INSDoorSimple_Biomass.description>部屋を隔てる断熱扉です。手動で開閉する必要があるので移動が遅くなります。どの程度遅くなるかはドアの材料によって決定されます。</INSDoorSimple_Biomass.description>
+  <Blueprint_INSDoorSimple_Biomass.label>断熱ドア (干し草) (設計)</Blueprint_INSDoorSimple_Biomass.label>
+  <Frame_INSDoorSimple_Biomass.label>断熱ドア (干し草) (施工)</Frame_INSDoorSimple_Biomass.label>
+  <Frame_INSDoorSimple_Biomass.description>部屋を隔てる断熱扉です。手動で開閉する必要があるので移動が遅くなります。どの程度遅くなるかはドアの材料によって決定されます。</Frame_INSDoorSimple_Biomass.description>
+  <INSDoor_Biomass.label>断熱自動ドア (干し草)</INSDoor_Biomass.label>
+  <INSDoor_Biomass.description>部屋を仕切る断熱自動扉です。電動式の開閉装置によって減速せずにドアを通過できます。</INSDoor_Biomass.description>
+  <Blueprint_INSDoor_Biomass.label>断熱自動ドア (干し草) (設計)</Blueprint_INSDoor_Biomass.label>
+  <Frame_INSDoor_Biomass.label>断熱自動ドア (干し草) (施工)</Frame_INSDoor_Biomass.label>
+  <Frame_INSDoor_Biomass.description>部屋を仕切る断熱自動扉です。電動式の開閉装置によって減速せずにドアを通過できます。</Frame_INSDoor_Biomass.description>
+</LanguageData>

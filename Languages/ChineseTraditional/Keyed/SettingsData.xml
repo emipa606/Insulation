@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Insulation.Name>隔热层</Insulation.Name>
+  <Insulation.pctEffective>隔热效率 [默认 100%]:</Insulation.pctEffective>
+</LanguageData>

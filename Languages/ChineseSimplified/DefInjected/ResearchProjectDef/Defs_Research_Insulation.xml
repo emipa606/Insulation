@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <InsulationBiomass.label>隔热层(有机材质)</InsulationBiomass.label>
+  <InsulationBiomass.description>允许你使用有机材料建造隔热墙和门。</InsulationBiomass.description>
+  <InsulationFibres.label>隔热层(纤维材质)</InsulationFibres.label>
+  <InsulationFibres.description>允许你使用纤维材料建造隔热墙和门。</InsulationFibres.description>
+  <InsulationPolymers.label>隔热层(高分子聚合材质)</InsulationPolymers.label>
+  <InsulationPolymers.description>允许你使用人工合成的高分子聚合材料建造隔热墙和门。</InsulationPolymers.description>
+  <InsulationHyper.label>隔热层(超世代材质)</InsulationHyper.label>
+  <InsulationHyper.description>允许你使用先进材料建造隔热墙和门。</InsulationHyper.description>
+</LanguageData>

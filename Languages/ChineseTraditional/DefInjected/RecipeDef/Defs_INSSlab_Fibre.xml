@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Make_INSSlab_Fibre.label>製作隔熱板（纖維材質）</Make_INSSlab_Fibre.label>
+  <Make_INSSlab_Fibre.description>製作5塊隔熱板（纖維材質）。</Make_INSSlab_Fibre.description>
+  <Make_INSSlab_Fibre.jobString>正在製作隔熱板（纖維材質）。</Make_INSSlab_Fibre.jobString>
+  <MakeBulk_INSSlab_Fibre.label>批量製作隔熱板（纖維材質）</MakeBulk_INSSlab_Fibre.label>
+  <MakeBulk_INSSlab_Fibre.description>製作25塊隔熱板（纖維材質）。</MakeBulk_INSSlab_Fibre.description>
+  <MakeBulk_INSSlab_Fibre.jobString>正在批量製作隔熱板（纖維材質）。</MakeBulk_INSSlab_Fibre.jobString>
+  <Recycle_INSSlab_Fibre.label>折開隔熱板（纖維材質）</Recycle_INSSlab_Fibre.label>
+  <Recycle_INSSlab_Fibre.description>折開5塊隔熱板（纖維材質）。</Recycle_INSSlab_Fibre.description>
+  <Recycle_INSSlab_Fibre.jobString>正在折開隔熱板（纖維材質）</Recycle_INSSlab_Fibre.jobString>
+</LanguageData>
