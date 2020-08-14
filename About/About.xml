@@ -19,6 +19,7 @@
   <loadAfter>
     <li>brrainz.harmony</li>
     <li>Mlie.Apothecary</li>
+    <li>Mlie.RimPlas</li>
     <li>CETeam.CombatExtended</li>
     <li>Linkolas.LinkableDoors</li>
     <li>LWM.DeepStorage</li>

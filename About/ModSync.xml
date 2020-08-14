@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>0085316e-ef14-4a75-a0f1-05d486beb70d</ID>
   <ModName>Insulation (Continued)</ModName>
-  <Version>1.0.0.0</Version>
+  <Version>1.0.1.0</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,7 +12,3 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
-
-
-
-
