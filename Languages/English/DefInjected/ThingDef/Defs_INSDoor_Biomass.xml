@@ -1,17 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <INSDoorSimple_Biomass.label>Insulated Door (Biomass)</INSDoorSimple_Biomass.label>
-  <INSDoorSimple_Biomass.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Biomass.description>
-  <INSDoorSimple_Biomass_Blueprint.label>Insulated Door (Biomass) (blueprint)</INSDoorSimple_Biomass_Blueprint.label>
-  <INSDoorSimple_Biomass_Frame.label>Insulated Door (Biomass) (building)</INSDoorSimple_Biomass_Frame.label>
-  <INSDoorSimple_Biomass_Frame.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Biomass_Frame.description>
-
-  <INSDoor_Biomass.label>Insulated Autodoor (Biomass)</INSDoor_Biomass.label>
-  <INSDoor_Biomass.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Biomass.description>
-  <INSDoor_Biomass_Blueprint.label>Insulated Autodoor (Biomass) (blueprint)</INSDoor_Biomass_Blueprint.label>
-  <INSDoor_Biomass_Frame.label>Insulated Autodoor (Biomass) (building)</INSDoor_Biomass_Frame.label>
-  <INSDoor_Biomass_Frame.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Biomass_Frame.description>
-
+  <!--<INSDoorSimple_Biomass.label>Insulated Door (Biomass)</INSDoorSimple_Biomass.label>-->
+  <!--<INSDoorSimple_Biomass.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Biomass.description>-->
+  <!--<INSDoorSimple_Biomass_Blueprint.label>Insulated Door (Biomass) (blueprint)</INSDoorSimple_Biomass_Blueprint.label>-->
+  <!--<INSDoorSimple_Biomass_Frame.label>Insulated Door (Biomass) (building)</INSDoorSimple_Biomass_Frame.label>-->
+  <!--<INSDoorSimple_Biomass_Frame.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Biomass_Frame.description>-->
+  <!--<INSDoor_Biomass.label>Insulated Autodoor (Biomass)</INSDoor_Biomass.label>-->
+  <!--<INSDoor_Biomass.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Biomass.description>-->
+  <!--<INSDoor_Biomass_Blueprint.label>Insulated Autodoor (Biomass) (blueprint)</INSDoor_Biomass_Blueprint.label>-->
+  <!--<INSDoor_Biomass_Frame.label>Insulated Autodoor (Biomass) (building)</INSDoor_Biomass_Frame.label>-->
+  <!--<INSDoor_Biomass_Frame.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Biomass_Frame.description>-->
 
 </LanguageData>

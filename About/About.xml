@@ -19,24 +19,29 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>Update of peladors mod
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of peladors mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2000755840
 
-[img]https://i.imgur.com/GYswkZ7.png[/img]
+- Added support for Doors Expanded
 
-Support-chat:
-https://invite.gg/mlie
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
-Non-steam version:
-https://github.com/emipa606/Insulation
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/Insulation][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
 	
---- Original Description ---
-Overview
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+
+[h1]Overview[/h1] V1.1
 
 Building structures (Walls and doors) with thermal insulation properties.
 
 
-Details
+[h1]Details[/h1]
 
 Provides a means to place thermal insulation materials into structure items that help with reducing the transfer rates of heat IG. There are different doors and walls provided with an associated insulation material to be used with it in its construction:
 
@@ -63,50 +68,61 @@ Polymer slabs can be recycled to 50% of the Chemfuel.
 Hyper Slabs can be recycled as part of the materials for Ultratech Medicine. (Where Medical Supplements is loaded).
 
 
-Mod Notes
+[h1]Mod Notes[/h1]
 
 Research projects in own tab. Makes use of own architect menu area to separate the insulation structures.
 
 Can be added to a save game and removal would require removing all the relevant items and connected elements.
 
 
-Mod Option(s)
+[h1]Mod Option(s)[/h1]
 
 Includes a mod option to "tweak" the effectiveness of the insulation. This will allow you to fine tune the process more to your liking as desired.
 
 
-Compatibility
-*** subject to conversion ***
+[h1]Compatibility[/h1] *** subject to conversion ***
 
-Apothecary - Uses some plant materials as biomass insulation ingredients.
-Combat Extended - Applies the appropriate damage multipliers for the walls.
-Linked doors - applies graphics for extended insulated doors.
-LWM's Deep storage - Insulation can be stored on pallets.
-Medical Supplements - Recycle Hyper Slabs as part materials to make ultratech medicine.
-FF V1.1 - Uses plant scrap materials for biomass insulation ingredient option.
-Rimefeller - Adds a polymer insulation refiner.
-RimPlas - Includes RimThermoPlas spacer versions of the doors and walls. (Also includes additional elements).
+[b]Apothecary[/b] - Uses some plant materials as biomass insulation ingredients.
+[b]Combat Extended[/b] - Applies the appropriate damage multipliers for the walls.
+[b]Linked doors[/b] - applies graphics for extended insulated doors.
+[b]LWM's Deep storage[/b] - Insulation can be stored on pallets.
+[b]Medical Supplements[/b] - Recycle Hyper Slabs as part materials to make ultratech medicine.
+[b]FF V1.1[/b] - Uses plant scrap materials for biomass insulation ingredient option.
+[b]Rimefeller[/b] - Adds a polymer insulation refiner.
+[b]RimPlas[/b] - Includes RimThermoPlas spacer versions of the doors and walls. (Also includes additional elements).
 
-Recommended
-*** subject to conversion ***
+[h1]Recommended[/h1] *** subject to conversion ***
 
-Replace Stuff - Uuugggg: Allows you to replace walls without having to deconstruct them first. Thus facilitating insulation being applied to existing walls with less impact to the rooms temperature balance during the refit.
-https://steamcommunity.com/sharedfiles/filedetails/?id=1372003680
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1372003680]Replace Stuff[/url] - Uuugggg: Allows you to replace walls without having to deconstruct them first. Thus facilitating insulation being applied to existing walls with less impact to the rooms temperature balance during the refit.
 
 (I will leave it to player discretion if they do not wish to use this mod for a higher degree of difficulty with the management and installation of structures and their related materials.)
 
-Future Considerations
+[h1]Future Considerations[/h1]
 
 Roof/Deep Insulation - (Might not be needed).
 
-Spacer Insulation (Sterile properties).
+[strike]Spacer Insulation (Sterile properties).[/strike]
 
-Credits
+[h1]Credits[/h1]
 
 Graphics Revision - GenomX
 
 Chinese (Simplified and Traditional) - HawnHan
 Japanese translation - Proxyer
+
+[h1]Github[/h1]
+
+https://github.com/PeladorRW/Insulation
+
+
+[h1]Pelador's Discord[/h1]
+
+https://discord.gg/CFNP26C
+
+[h1]V1.1 Collection[/h1]
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=2012817741
+
 
 (CC BY-NC-SA 4.0)</description>
 </ModMetaData>

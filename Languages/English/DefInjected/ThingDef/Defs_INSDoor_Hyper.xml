@@ -1,17 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <INSDoorSimple_Hyper.label>Insulated Door (Hyper)</INSDoorSimple_Hyper.label>
-  <INSDoorSimple_Hyper.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Hyper.description>
-  <INSDoorSimple_Hyper_Blueprint.label>Insulated Door (Hyper) (blueprint)</INSDoorSimple_Hyper_Blueprint.label>
-  <INSDoorSimple_Hyper_Frame.label>Insulated Door (Hyper) (building)</INSDoorSimple_Hyper_Frame.label>
-  <INSDoorSimple_Hyper_Frame.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Hyper_Frame.description>
-
-  <INSDoor_Hyper.label>Insulated Autodoor (Hyper)</INSDoor_Hyper.label>
-  <INSDoor_Hyper.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Hyper.description>
-  <INSDoor_Hyper_Blueprint.label>Insulated Autodoor (Hyper) (blueprint)</INSDoor_Hyper_Blueprint.label>
-  <INSDoor_Hyper_Frame.label>Insulated Autodoor (Hyper) (building)</INSDoor_Hyper_Frame.label>
-  <INSDoor_Hyper_Frame.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Hyper_Frame.description>
-
+  <!--<INSDoorSimple_Hyper.label>Insulated Door (Hyper)</INSDoorSimple_Hyper.label>-->
+  <!--<INSDoorSimple_Hyper.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Hyper.description>-->
+  <!--<INSDoorSimple_Hyper_Blueprint.label>Insulated Door (Hyper) (blueprint)</INSDoorSimple_Hyper_Blueprint.label>-->
+  <!--<INSDoorSimple_Hyper_Frame.label>Insulated Door (Hyper) (building)</INSDoorSimple_Hyper_Frame.label>-->
+  <!--<INSDoorSimple_Hyper_Frame.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Hyper_Frame.description>-->
+  <!--<INSDoor_Hyper.label>Insulated Autodoor (Hyper)</INSDoor_Hyper.label>-->
+  <!--<INSDoor_Hyper.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Hyper.description>-->
+  <!--<INSDoor_Hyper_Blueprint.label>Insulated Autodoor (Hyper) (blueprint)</INSDoor_Hyper_Blueprint.label>-->
+  <!--<INSDoor_Hyper_Frame.label>Insulated Autodoor (Hyper) (building)</INSDoor_Hyper_Frame.label>-->
+  <!--<INSDoor_Hyper_Frame.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Hyper_Frame.description>-->
 
 </LanguageData>

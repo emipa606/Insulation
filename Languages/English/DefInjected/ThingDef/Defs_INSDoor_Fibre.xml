@@ -1,17 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <INSDoorSimple_Fibre.label>Insulated Door (Fibre)</INSDoorSimple_Fibre.label>
-  <INSDoorSimple_Fibre.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Fibre.description>
-  <INSDoorSimple_Fibre_Blueprint.label>Insulated Door (Fibre) (blueprint)</INSDoorSimple_Fibre_Blueprint.label>
-  <INSDoorSimple_Fibre_Frame.label>Insulated Door (Fibre) (building)</INSDoorSimple_Fibre_Frame.label>
-  <INSDoorSimple_Fibre_Frame.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Fibre_Frame.description>
-
-  <INSDoor_Fibre.label>Insulated Autodoor (Fibre)</INSDoor_Fibre.label>
-  <INSDoor_Fibre.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Fibre.description>
-  <INSDoor_Fibre_Blueprint.label>Insulated Autodoor (Fibre) (blueprint)</INSDoor_Fibre_Blueprint.label>
-  <INSDoor_Fibre_Frame.label>Insulated Autodoor (Fibre) (building)</INSDoor_Fibre_Frame.label>
-  <INSDoor_Fibre_Frame.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Fibre_Frame.description>
-
+  <!--<INSDoorSimple_Fibre.label>Insulated Door (Fibre)</INSDoorSimple_Fibre.label>-->
+  <!--<INSDoorSimple_Fibre.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Fibre.description>-->
+  <!--<INSDoorSimple_Fibre_Blueprint.label>Insulated Door (Fibre) (blueprint)</INSDoorSimple_Fibre_Blueprint.label>-->
+  <!--<INSDoorSimple_Fibre_Frame.label>Insulated Door (Fibre) (building)</INSDoorSimple_Fibre_Frame.label>-->
+  <!--<INSDoorSimple_Fibre_Frame.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Fibre_Frame.description>-->
+  <!--<INSDoor_Fibre.label>Insulated Autodoor (Fibre)</INSDoor_Fibre.label>-->
+  <!--<INSDoor_Fibre.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Fibre.description>-->
+  <!--<INSDoor_Fibre_Blueprint.label>Insulated Autodoor (Fibre) (blueprint)</INSDoor_Fibre_Blueprint.label>-->
+  <!--<INSDoor_Fibre_Frame.label>Insulated Autodoor (Fibre) (building)</INSDoor_Fibre_Frame.label>-->
+  <!--<INSDoor_Fibre_Frame.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Fibre_Frame.description>-->
 
 </LanguageData>
