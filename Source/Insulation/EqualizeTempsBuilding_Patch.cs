@@ -12,66 +12,79 @@ namespace Insulation
         [HarmonyPrefix]
         public static bool PreFix(ref RoomGroup[] ___beqRoomGroups, Building b, ref float rate, bool twoWay)
         {
-            rate = InsulateUtility.GetInsulationRate(b, rate);
-            var num = 0;
-            var num2 = 0f;
-            if (twoWay)
+            lock (___beqRoomGroups)
             {
-                for (var i = 0; i < 2; i++)
+                rate = InsulateUtility.GetInsulationRate(b, rate);
+                var num = 0;
+                var num2 = 0f;
+                if (twoWay)
                 {
-                    var intVec = i != 0 ? b.Position - b.Rotation.FacingCell : b.Position + b.Rotation.FacingCell;
-                    if (intVec.InBounds(b.Map))
+                    for (var i = 0; i < 2; i++)
                     {
+                        var intVec = i != 0 ? b.Position - b.Rotation.FacingCell : b.Position + b.Rotation.FacingCell;
+                        if (!intVec.InBounds(b.Map))
+                        {
+                            continue;
+                        }
+
                         var roomGroup = intVec.GetRoomGroup(b.Map);
-                        if (roomGroup != null)
+                        if (roomGroup == null)
                         {
-                            num2 += roomGroup.Temperature;
-                            ___beqRoomGroups[num] = roomGroup;
-                            num++;
+                            continue;
                         }
+
+                        num2 += roomGroup.Temperature;
+                        ___beqRoomGroups[num] = roomGroup;
+                        num++;
                     }
                 }
-            }
-            else
-            {
-                for (var j = 0; j < 4; j++)
+                else
                 {
-                    var intVec2 = b.Position + GenAdj.CardinalDirections[j];
-                    if (intVec2.InBounds(b.Map))
+                    for (var j = 0; j < 4; j++)
                     {
-                        var roomGroup2 = intVec2.GetRoomGroup(b.Map);
-                        if (roomGroup2 != null)
+                        var intVec2 = b.Position + GenAdj.CardinalDirections[j];
+                        if (!intVec2.InBounds(b.Map))
                         {
-                            num2 += roomGroup2.Temperature;
-                            ___beqRoomGroups[num] = roomGroup2;
-                            num++;
+                            continue;
                         }
+
+                        var roomGroup2 = intVec2.GetRoomGroup(b.Map);
+                        if (roomGroup2 == null)
+                        {
+                            continue;
+                        }
+
+                        num2 += roomGroup2.Temperature;
+                        ___beqRoomGroups[num] = roomGroup2;
+                        num++;
                     }
                 }
-            }
 
-            if (num == 0)
-            {
-                return false;
-            }
-
-            var num3 = num2 / num;
-            var roomGroup3 = b.GetRoomGroup();
-            if (roomGroup3 != null)
-            {
-                roomGroup3.Temperature = num3;
-            }
-
-            if (num == 1)
-            {
-                return false;
-            }
-
-            var num4 = 1f;
-            for (var k = 0; k < num; k++)
-            {
-                if (!___beqRoomGroups[k].UsesOutdoorTemperature)
+                if (num == 0)
                 {
+                    return false;
+                }
+
+                var num3 = num2 / num;
+                var roomGroup3 = b.GetRoomGroup();
+                if (roomGroup3 != null)
+                {
+                    roomGroup3.Temperature = num3;
+                }
+
+                if (num == 1)
+                {
+                    return false;
+                }
+
+                var num4 = 1f;
+                for (var k = 0; k < num; k++)
+                {
+                    if (___beqRoomGroups[k].UsesOutdoorTemperature)
+                    {
+                        continue;
+                    }
+
                     var temperature = ___beqRoomGroups[k].Temperature;
                     var num5 = (num3 - temperature) * rate;
                     var num6 = num5 / ___beqRoomGroups[k].CellCount;
@@ -91,24 +104,26 @@ namespace Insulation
                         num4 = num8;
                     }
                 }
-            }
 
-            for (var l = 0; l < num; l++)
-            {
-                if (!___beqRoomGroups[l].UsesOutdoorTemperature)
+                for (var l = 0; l < num; l++)
                 {
+                    if (___beqRoomGroups[l].UsesOutdoorTemperature)
+                    {
+                        continue;
+                    }
+
                     var temperature2 = ___beqRoomGroups[l].Temperature;
                     var num9 = (num3 - temperature2) * rate * num4 / ___beqRoomGroups[l].CellCount;
                     ___beqRoomGroups[l].Temperature += num9;
                 }
-            }
 
-            for (var m = 0; m < ___beqRoomGroups.Length; m++)
-            {
-                ___beqRoomGroups[m] = null;
-            }
+                for (var m = 0; m < ___beqRoomGroups.Length; m++)
+                {
+                    ___beqRoomGroups[m] = null;
+                }
 
-            return false;
+                return false;
+            }
         }
     }
 }
