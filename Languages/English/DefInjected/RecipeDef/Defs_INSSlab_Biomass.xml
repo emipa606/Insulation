@@ -1,13 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <Make_INSSlab_Biomass.label>Make Insulation slabs (biomass)</Make_INSSlab_Biomass.label>
   <Make_INSSlab_Biomass.description>Make 5 Insulation slabs (biomass).</Make_INSSlab_Biomass.description>
   <Make_INSSlab_Biomass.jobString>Making insulation slabs.</Make_INSSlab_Biomass.jobString>
-
   <MakeBulk_INSSlab_Biomass.label>Make Insulation slabs (biomass) in bulk</MakeBulk_INSSlab_Biomass.label>
   <MakeBulk_INSSlab_Biomass.description>Make 25 Insulation slabs (biomass).</MakeBulk_INSSlab_Biomass.description>
   <MakeBulk_INSSlab_Biomass.jobString>Making insulation slabs.</MakeBulk_INSSlab_Biomass.jobString>
-
-
 </LanguageData>

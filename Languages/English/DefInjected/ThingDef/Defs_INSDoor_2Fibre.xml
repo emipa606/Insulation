@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <INSDoorSimple_Fibre.label>Insulated Door (Fibre)</INSDoorSimple_Fibre.label>
   <INSDoorSimple_Fibre.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Fibre.description>
-
   <INSDoor_Fibre.label>Insulated Autodoor (Fibre)</INSDoor_Fibre.label>
   <INSDoor_Fibre.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Fibre.description>
-
-
 </LanguageData>

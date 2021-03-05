@@ -58,7 +58,7 @@ The balancing factors are that they are less robust than their standard counterp
 
 The insulation effect also relates to stuff properties, but in a more generalised manner based on what type it is, so metallic, woody, stony as opposed to a more complex arrangement of looking at the stuff properties for insulation power. (This since not all of these values will be defined either in vanilla or as modded elements).
 
-In order of precedence: Fabrics &gt; Stone &gt; Wood &gt; Metal for their insulation capabilities.
+In order of precedence: Fabrics > Stone > Wood > Metal for their insulation capabilities.
 
 For redundancy of the insulation materials:
 
@@ -110,19 +110,18 @@ Graphics Revision - GenomX
 Chinese (Simplified and Traditional) - HawnHan
 Japanese translation - Proxyer
 
-[h1]Github[/h1]
-
-https://github.com/PeladorRW/Insulation
+(CC BY-NC-SA 4.0)
 
 
-[h1]Pelador's Discord[/h1]
-
-https://discord.gg/CFNP26C
-
-[h1]V1.1 Collection[/h1]
-
-https://steamcommunity.com/sharedfiles/filedetails/?id=2012817741
-
-
-(CC BY-NC-SA 4.0)</description>
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+

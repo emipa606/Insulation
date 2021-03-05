@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <INSWall_Fibre.label>Insulated wall (Fibres)</INSWall_Fibre.label>
   <INSWall_Fibre.description>An impassable wall, capable of holding up a roof. This wall is insulated with fibres.</INSWall_Fibre.description>
   <INSWall_Fibre_Blueprint.label>Insulated wall (Fibres) (blueprint)</INSWall_Fibre_Blueprint.label>
   <INSWall_Fibre_Frame.label>Insulated wall (Fibres) (building)</INSWall_Fibre_Frame.label>
   <INSWall_Fibre_Frame.description>An impassable wall, capable of holding up a roof. This wall is insulated with fibres.</INSWall_Fibre_Frame.description>
-
-
 </LanguageData>
