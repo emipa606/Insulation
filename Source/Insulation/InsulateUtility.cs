@@ -120,7 +120,7 @@ namespace Insulation
                 return (!RepairNeed || b.TryGetComp<CompBreakdownable>() == null || !b.IsBrokenDown()) &&
                        (HitPointsNeed <= 0f || HitPointsNeed > 1f || !b.def.useHitPoints ||
                         b.def.BaseMaxHitPoints <= 0 ||
-                        b.HitPoints / (float) b.def.BaseMaxHitPoints >= HitPointsNeed);
+                        b.HitPoints / (float)b.def.BaseMaxHitPoints >= HitPointsNeed);
             }
 
             if (b.TryGetComp<CompRefuelable>() == null)
@@ -135,56 +135,49 @@ namespace Insulation
 
             return (!RepairNeed || b.TryGetComp<CompBreakdownable>() == null || !b.IsBrokenDown()) &&
                    (HitPointsNeed <= 0f || HitPointsNeed > 1f || !b.def.useHitPoints || b.def.BaseMaxHitPoints <= 0 ||
-                    b.HitPoints / (float) b.def.BaseMaxHitPoints >= HitPointsNeed);
+                    b.HitPoints / (float)b.def.BaseMaxHitPoints >= HitPointsNeed);
         }
 
         // Token: 0x06000010 RID: 16 RVA: 0x000025F0 File Offset: 0x000007F0
-        public static float GetAvgWallRate(RoomGroup rg)
+        public static float GetAvgWallRate(Room roomToCheck)
         {
             var AvgWallRate = 1f;
-            var map = rg?.Map;
-            if (map == null || rg.UsesOutdoorTemperature)
+            var map = roomToCheck?.Map;
+            if (map == null || roomToCheck.UsesOutdoorTemperature)
+            {
+                return AvgWallRate;
+            }
+
+            if (roomToCheck.IsDoorway)
+            {
+                return AvgWallRate;
+            }
+
+            var bordercells = roomToCheck.BorderCells.ToList();
+            if (bordercells.Count <= 0)
             {
                 return AvgWallRate;
             }
 
             var TotalRate = 0f;
             var TotalCount = 0;
-            var rooms = rg.Rooms;
-            if (rooms.Count > 0)
+            foreach (var cell in bordercells)
             {
-                foreach (var room in rooms)
+                if (!cell.InBounds(map))
                 {
-                    if (room.IsDoorway)
-                    {
-                        continue;
-                    }
+                    continue;
+                }
 
-                    var bordercells = room.BorderCells.ToList();
-                    if (bordercells.Count <= 0)
-                    {
-                        continue;
-                    }
-
-                    foreach (var cell in bordercells)
-                    {
-                        if (!cell.InBounds(map))
-                        {
-                            continue;
-                        }
-
-                        if (cell.GetEdifice(map) != null)
-                        {
-                            var cellEdRate = GetInsulationRate(cell.GetEdifice(map), 1f);
-                            TotalRate += cellEdRate;
-                            TotalCount++;
-                        }
-                        else
-                        {
-                            TotalRate += 1f;
-                            TotalCount++;
-                        }
-                    }
+                if (cell.GetEdifice(map) != null)
+                {
+                    var cellEdRate = GetInsulationRate(cell.GetEdifice(map), 1f);
+                    TotalRate += cellEdRate;
+                    TotalCount++;
+                }
+                else
+                {
+                    TotalRate += 1f;
+                    TotalCount++;
                 }
             }
 
@@ -194,23 +187,19 @@ namespace Insulation
         }
 
         // Token: 0x06000011 RID: 17 RVA: 0x00002724 File Offset: 0x00000924
-        public static float GetAvgThinRate(RoomGroup rg)
+        public static float GetAvgThinRate(Room roomToCheck)
         {
             var AvgThinRate = 1f;
-            if (rg.RoomCount <= 0)
-            {
-                return AvgThinRate;
-            }
 
-            var map = rg.Map;
-            if (map == null || rg.UsesOutdoorTemperature)
+            var map = roomToCheck.Map;
+            if (map == null || roomToCheck.UsesOutdoorTemperature)
             {
                 return AvgThinRate;
             }
 
             var totalThinFactor = 0f;
             var totalThinCount = 0;
-            foreach (var intVec in rg.Cells)
+            foreach (var intVec in roomToCheck.Cells)
             {
                 var roof = intVec.GetRoof(map);
                 if (roof == null || roof.isThickRoof)
@@ -231,23 +220,19 @@ namespace Insulation
         }
 
         // Token: 0x06000012 RID: 18 RVA: 0x000027CC File Offset: 0x000009CC
-        public static float GetAvgDeepRate(RoomGroup rg)
+        public static float GetAvgDeepRate(Room roomToCheck)
         {
             var AvgDeepRate = 1f;
-            if (rg.RoomCount <= 0)
-            {
-                return AvgDeepRate;
-            }
 
-            var map = rg.Map;
-            if (map == null || rg.UsesOutdoorTemperature)
+            var map = roomToCheck.Map;
+            if (map == null || roomToCheck.UsesOutdoorTemperature)
             {
                 return AvgDeepRate;
             }
 
             var totalDeepFactor = 0f;
             var totalDeepCount = 0;
-            foreach (var intVec in rg.Cells)
+            foreach (var intVec in roomToCheck.Cells)
             {
                 var roof = intVec.GetRoof(map);
                 if (roof == null || !roof.isThickRoof)

@@ -10,9 +10,9 @@ namespace Insulation
     {
         // Token: 0x0600000B RID: 11 RVA: 0x00002120 File Offset: 0x00000320
         [HarmonyPrefix]
-        public static bool PreFix(ref RoomGroup[] ___beqRoomGroups, Building b, ref float rate, bool twoWay)
+        public static bool PreFix(ref Room[] ___beqRooms, Building b, ref float rate, bool twoWay)
         {
-            lock (___beqRoomGroups)
+            lock (___beqRooms)
             {
                 rate = InsulateUtility.GetInsulationRate(b, rate);
                 var num = 0;
@@ -27,14 +27,14 @@ namespace Insulation
                             continue;
                         }
 
-                        var roomGroup = intVec.GetRoomGroup(b.Map);
-                        if (roomGroup == null)
+                        var room = intVec.GetRoom(b.Map);
+                        if (room == null)
                         {
                             continue;
                         }
 
-                        num2 += roomGroup.Temperature;
-                        ___beqRoomGroups[num] = roomGroup;
+                        num2 += room.Temperature;
+                        ___beqRooms[num] = room;
                         num++;
                     }
                 }
@@ -48,14 +48,14 @@ namespace Insulation
                             continue;
                         }
 
-                        var roomGroup2 = intVec2.GetRoomGroup(b.Map);
-                        if (roomGroup2 == null)
+                        var room2 = intVec2.GetRoom(b.Map);
+                        if (room2 == null)
                         {
                             continue;
                         }
 
-                        num2 += roomGroup2.Temperature;
-                        ___beqRoomGroups[num] = roomGroup2;
+                        num2 += room2.Temperature;
+                        ___beqRooms[num] = room2;
                         num++;
                     }
                 }
@@ -66,10 +66,10 @@ namespace Insulation
                 }
 
                 var num3 = num2 / num;
-                var roomGroup3 = b.GetRoomGroup();
-                if (roomGroup3 != null)
+                var room3 = b.GetRoom();
+                if (room3 != null)
                 {
-                    roomGroup3.Temperature = num3;
+                    room3.Temperature = num3;
                 }
 
                 if (num == 1)
@@ -80,25 +80,24 @@ namespace Insulation
                 var num4 = 1f;
                 for (var k = 0; k < num; k++)
                 {
-                    if (___beqRoomGroups[k].UsesOutdoorTemperature)
+                    if (___beqRooms[k].UsesOutdoorTemperature)
                     {
                         continue;
                     }
 
-                    var temperature = ___beqRoomGroups[k].Temperature;
+                    var temperature = ___beqRooms[k].Temperature;
                     var num5 = (num3 - temperature) * rate;
-                    var num6 = num5 / ___beqRoomGroups[k].CellCount;
-                    var num7 = ___beqRoomGroups[k].Temperature + num6;
-                    if (num5 > 0f && num7 > num3)
+                    var num6 = num5 / ___beqRooms[k].CellCount;
+                    var num7 = ___beqRooms[k].Temperature + num6;
+                    switch (num5)
                     {
-                        num7 = num3;
-                    }
-                    else if (num5 < 0f && num7 < num3)
-                    {
-                        num7 = num3;
+                        case > 0f when num7 > num3:
+                        case < 0f when num7 < num3:
+                            num7 = num3;
+                            break;
                     }
 
-                    var num8 = Mathf.Abs((num7 - temperature) * ___beqRoomGroups[k].CellCount / num5);
+                    var num8 = Mathf.Abs((num7 - temperature) * ___beqRooms[k].CellCount / num5);
                     if (num8 < num4)
                     {
                         num4 = num8;
@@ -107,19 +106,19 @@ namespace Insulation
 
                 for (var l = 0; l < num; l++)
                 {
-                    if (___beqRoomGroups[l].UsesOutdoorTemperature)
+                    if (___beqRooms[l].UsesOutdoorTemperature)
                     {
                         continue;
                     }
 
-                    var temperature2 = ___beqRoomGroups[l].Temperature;
-                    var num9 = (num3 - temperature2) * rate * num4 / ___beqRoomGroups[l].CellCount;
-                    ___beqRoomGroups[l].Temperature += num9;
+                    var temperature2 = ___beqRooms[l].Temperature;
+                    var num9 = (num3 - temperature2) * rate * num4 / ___beqRooms[l].CellCount;
+                    ___beqRooms[l].Temperature += num9;
                 }
 
-                for (var m = 0; m < ___beqRoomGroups.Length; m++)
+                for (var m = 0; m < ___beqRooms.Length; m++)
                 {
-                    ___beqRoomGroups[m] = null;
+                    ___beqRooms[m] = null;
                 }
 
                 return false;

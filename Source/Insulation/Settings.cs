@@ -17,7 +17,7 @@ namespace Insulation
             listing_Standard.Begin(canvas);
             listing_Standard.Gap();
             listing_Standard.Label("Insulation.pctEffective".Translate() + "  " + pctEffective);
-            pctEffective = checked((int) listing_Standard.Slider(pctEffective, 50f, 200f));
+            pctEffective = checked((int)listing_Standard.Slider(pctEffective, 50f, 200f));
             listing_Standard.Gap();
             listing_Standard.End();
         }
