@@ -1,261 +1,296 @@
-﻿using System.Linq;
+using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using Verse;
 
-namespace Insulation
+namespace Insulation;
+
+public class InsulateUtility
 {
-    // Token: 0x02000009 RID: 9
-    public class InsulateUtility
+    public static Dictionary<Room, float> CachedRoomWallRates;
+    public static Dictionary<Room, float> CachedRoomThinRates;
+    public static Dictionary<Room, float> CachedRoomDeepRates;
+
+    public static float GetInsulationRate(Building b, float rate)
     {
-        // Token: 0x0600000E RID: 14 RVA: 0x0000237C File Offset: 0x0000057C
-        public static float GetInsulationRate(Building b, float rate)
+        var newrate = rate;
+        var def = b.def;
+        var CompsBI = def?.GetCompProperties<CompProperties_BuildInsulation>();
+        if (CompsBI == null)
         {
-            var newrate = rate;
-            var def = b.def;
-            var CompsBI = def?.GetCompProperties<CompProperties_BuildInsulation>();
-            if (CompsBI == null)
-            {
-                return newrate * 100f / Controller.Settings.pctEffective;
-            }
-
-            var HeatTransferFactor = CompsBI.HeatTransferFactor;
-            var InsulationStuff = CompsBI.InsulationStuff;
-            var PowerNeed = CompsBI.PowerNeeded;
-            var FuelNeed = CompsBI.FuelNeeded;
-            var RepairNeed = CompsBI.RepairNeeded;
-            var HitPointsNeed = CompsBI.HitPointsNeed;
-            if (!IsBuildingWorking(b, PowerNeed, FuelNeed, RepairNeed, HitPointsNeed))
-            {
-                return newrate * 100f / Controller.Settings.pctEffective;
-            }
-
-            var avgStuffCatFactor = 1f;
-            if (InsulationStuff)
-            {
-                if (b.def.MadeFromStuff)
-                {
-                    var TotalStuffCatFactor = 0f;
-                    var countStuffCatFactor = 0;
-                    var Bstuff = b.Stuff;
-                    if (Bstuff?.stuffProps.categories != null)
-                    {
-                        if (Bstuff.stuffProps.categories.Contains(StuffCategoryDefOf.Woody))
-                        {
-                            TotalStuffCatFactor += 1f;
-                            countStuffCatFactor++;
-                        }
-
-                        if (Bstuff.stuffProps.categories.Contains(StuffCategoryDefOf.Stony))
-                        {
-                            TotalStuffCatFactor += 1.5f;
-                            countStuffCatFactor++;
-                        }
-
-                        if (Bstuff.stuffProps.categories.Contains(StuffCategoryDefOf.Metallic))
-                        {
-                            TotalStuffCatFactor += 0.75f;
-                            countStuffCatFactor++;
-                        }
-
-                        if (Bstuff.stuffProps.categories.Contains(StuffCategoryDefOf.Fabric))
-                        {
-                            TotalStuffCatFactor += 2f;
-                            countStuffCatFactor++;
-                        }
-
-                        if (Bstuff.stuffProps.categories.Contains(StuffCategoryDefOf.Leathery))
-                        {
-                            TotalStuffCatFactor += 1.75f;
-                            countStuffCatFactor++;
-                        }
-
-                        if (countStuffCatFactor > 0)
-                        {
-                            avgStuffCatFactor = TotalStuffCatFactor / countStuffCatFactor;
-                        }
-                    }
-                }
-
-                if (!(HeatTransferFactor > 0f))
-                {
-                    return newrate * 100f / Controller.Settings.pctEffective;
-                }
-
-                if (avgStuffCatFactor > 0f)
-                {
-                    newrate *= HeatTransferFactor / avgStuffCatFactor;
-                }
-                else
-                {
-                    newrate *= HeatTransferFactor;
-                }
-            }
-            else if (HeatTransferFactor > 0f)
-            {
-                newrate *= HeatTransferFactor;
-            }
-
             return newrate * 100f / Controller.Settings.pctEffective;
         }
 
-        // Token: 0x0600000F RID: 15 RVA: 0x0000254C File Offset: 0x0000074C
-        public static bool IsBuildingWorking(Building b, bool PowerNeed, bool FuelNeed, bool RepairNeed,
-            float HitPointsNeed)
+        var HeatTransferFactor = CompsBI.HeatTransferFactor;
+        var InsulationStuff = CompsBI.InsulationStuff;
+        var PowerNeed = CompsBI.PowerNeeded;
+        var FuelNeed = CompsBI.FuelNeeded;
+        var RepairNeed = CompsBI.RepairNeeded;
+        var HitPointsNeed = CompsBI.HitPointsNeed;
+        if (!IsBuildingWorking(b, PowerNeed, FuelNeed, RepairNeed, HitPointsNeed))
         {
-            if (PowerNeed)
-            {
-                if (b.TryGetComp<CompPowerTrader>() == null)
-                {
-                    return false;
-                }
+            return newrate * 100f / Controller.Settings.pctEffective;
+        }
 
-                if (!b.TryGetComp<CompPowerTrader>().PowerOn)
+        var avgStuffCatFactor = 1f;
+        if (InsulationStuff)
+        {
+            if (b.def.MadeFromStuff)
+            {
+                var TotalStuffCatFactor = 0f;
+                var countStuffCatFactor = 0;
+                var Bstuff = b.Stuff;
+                if (Bstuff?.stuffProps.categories != null)
                 {
-                    return false;
+                    if (Bstuff.stuffProps.categories.Contains(StuffCategoryDefOf.Woody))
+                    {
+                        TotalStuffCatFactor += 1f;
+                        countStuffCatFactor++;
+                    }
+
+                    if (Bstuff.stuffProps.categories.Contains(StuffCategoryDefOf.Stony))
+                    {
+                        TotalStuffCatFactor += 1.5f;
+                        countStuffCatFactor++;
+                    }
+
+                    if (Bstuff.stuffProps.categories.Contains(StuffCategoryDefOf.Metallic))
+                    {
+                        TotalStuffCatFactor += 0.75f;
+                        countStuffCatFactor++;
+                    }
+
+                    if (Bstuff.stuffProps.categories.Contains(StuffCategoryDefOf.Fabric))
+                    {
+                        TotalStuffCatFactor += 2f;
+                        countStuffCatFactor++;
+                    }
+
+                    if (Bstuff.stuffProps.categories.Contains(StuffCategoryDefOf.Leathery))
+                    {
+                        TotalStuffCatFactor += 1.75f;
+                        countStuffCatFactor++;
+                    }
+
+                    if (countStuffCatFactor > 0)
+                    {
+                        avgStuffCatFactor = TotalStuffCatFactor / countStuffCatFactor;
+                    }
                 }
             }
 
-            if (!FuelNeed)
+            if (!(HeatTransferFactor > 0f))
             {
-                return (!RepairNeed || b.TryGetComp<CompBreakdownable>() == null || !b.IsBrokenDown()) &&
-                       (HitPointsNeed <= 0f || HitPointsNeed > 1f || !b.def.useHitPoints ||
-                        b.def.BaseMaxHitPoints <= 0 ||
-                        b.HitPoints / (float)b.def.BaseMaxHitPoints >= HitPointsNeed);
+                return newrate * 100f / Controller.Settings.pctEffective;
             }
 
-            if (b.TryGetComp<CompRefuelable>() == null)
+            if (avgStuffCatFactor > 0f)
+            {
+                newrate *= HeatTransferFactor / avgStuffCatFactor;
+            }
+            else
+            {
+                newrate *= HeatTransferFactor;
+            }
+        }
+        else if (HeatTransferFactor > 0f)
+        {
+            newrate *= HeatTransferFactor;
+        }
+
+        return newrate * 100f / Controller.Settings.pctEffective;
+    }
+
+    public static bool IsBuildingWorking(Building b, bool PowerNeed, bool FuelNeed, bool RepairNeed,
+        float HitPointsNeed)
+    {
+        if (PowerNeed)
+        {
+            if (b.TryGetComp<CompPowerTrader>() == null)
             {
                 return false;
             }
 
-            if (!b.TryGetComp<CompRefuelable>().HasFuel)
+            if (!b.TryGetComp<CompPowerTrader>().PowerOn)
             {
                 return false;
             }
+        }
 
+        if (!FuelNeed)
+        {
             return (!RepairNeed || b.TryGetComp<CompBreakdownable>() == null || !b.IsBrokenDown()) &&
-                   (HitPointsNeed <= 0f || HitPointsNeed > 1f || !b.def.useHitPoints || b.def.BaseMaxHitPoints <= 0 ||
+                   (HitPointsNeed <= 0f || HitPointsNeed > 1f || !b.def.useHitPoints ||
+                    b.def.BaseMaxHitPoints <= 0 ||
                     b.HitPoints / (float)b.def.BaseMaxHitPoints >= HitPointsNeed);
         }
 
-        // Token: 0x06000010 RID: 16 RVA: 0x000025F0 File Offset: 0x000007F0
-        public static float GetAvgWallRate(Room roomToCheck)
+        if (b.TryGetComp<CompRefuelable>() == null)
         {
-            var AvgWallRate = 1f;
-            var map = roomToCheck?.Map;
-            if (map == null || roomToCheck.UsesOutdoorTemperature)
-            {
-                return AvgWallRate;
-            }
+            return false;
+        }
 
-            if (roomToCheck.IsDoorway)
-            {
-                return AvgWallRate;
-            }
+        if (!b.TryGetComp<CompRefuelable>().HasFuel)
+        {
+            return false;
+        }
 
-            var bordercells = roomToCheck.BorderCells.ToList();
-            if (bordercells.Count <= 0)
-            {
-                return AvgWallRate;
-            }
+        return (!RepairNeed || b.TryGetComp<CompBreakdownable>() == null || !b.IsBrokenDown()) &&
+               (HitPointsNeed <= 0f || HitPointsNeed > 1f || !b.def.useHitPoints || b.def.BaseMaxHitPoints <= 0 ||
+                b.HitPoints / (float)b.def.BaseMaxHitPoints >= HitPointsNeed);
+    }
 
-            var TotalRate = 0f;
-            var TotalCount = 0;
-            foreach (var cell in bordercells)
-            {
-                if (!cell.InBounds(map))
-                {
-                    continue;
-                }
+    public static float GetAvgWallRate(Room roomToCheck)
+    {
+        if (CachedRoomWallRates == null)
+        {
+            CachedRoomWallRates = new Dictionary<Room, float>();
+        }
 
-                if (cell.GetEdifice(map) != null)
-                {
-                    var cellEdRate = GetInsulationRate(cell.GetEdifice(map), 1f);
-                    TotalRate += cellEdRate;
-                    TotalCount++;
-                }
-                else
-                {
-                    TotalRate += 1f;
-                    TotalCount++;
-                }
-            }
+        if (CachedRoomWallRates.ContainsKey(roomToCheck) && GenTicks.TicksAbs % GenTicks.TickRareInterval != 0)
+        {
+            return CachedRoomWallRates[roomToCheck];
+        }
 
-            AvgWallRate = TotalRate / TotalCount;
-
+        var AvgWallRate = 1f;
+        var map = roomToCheck.Map;
+        if (map == null || roomToCheck.UsesOutdoorTemperature)
+        {
+            CachedRoomWallRates[roomToCheck] = AvgWallRate;
             return AvgWallRate;
         }
 
-        // Token: 0x06000011 RID: 17 RVA: 0x00002724 File Offset: 0x00000924
-        public static float GetAvgThinRate(Room roomToCheck)
+        if (roomToCheck.IsDoorway)
         {
-            var AvgThinRate = 1f;
+            CachedRoomWallRates[roomToCheck] = AvgWallRate;
+            return AvgWallRate;
+        }
 
-            var map = roomToCheck.Map;
-            if (map == null || roomToCheck.UsesOutdoorTemperature)
+        var bordercells = roomToCheck.BorderCells.ToList();
+        if (bordercells.Count <= 0)
+        {
+            CachedRoomWallRates[roomToCheck] = AvgWallRate;
+            return AvgWallRate;
+        }
+
+        var TotalRate = 0f;
+        var TotalCount = 0;
+        foreach (var cell in bordercells)
+        {
+            if (!cell.InBounds(map))
             {
-                return AvgThinRate;
+                continue;
             }
 
-            var totalThinFactor = 0f;
-            var totalThinCount = 0;
-            foreach (var intVec in roomToCheck.Cells)
+            if (cell.GetEdifice(map) != null)
             {
-                var roof = intVec.GetRoof(map);
-                if (roof == null || roof.isThickRoof)
-                {
-                    continue;
-                }
-
-                totalThinFactor += GetRoofInsulationFactor(roof, false);
-                totalThinCount++;
+                var cellEdRate = GetInsulationRate(cell.GetEdifice(map), 1f);
+                TotalRate += cellEdRate;
+                TotalCount++;
             }
-
-            if (totalThinCount > 0)
+            else
             {
-                AvgThinRate = totalThinFactor / totalThinCount;
+                TotalRate += 1f;
+                TotalCount++;
             }
+        }
 
+        AvgWallRate = TotalRate / TotalCount;
+
+        CachedRoomWallRates[roomToCheck] = AvgWallRate;
+        return AvgWallRate;
+    }
+
+    public static float GetAvgThinRate(Room roomToCheck)
+    {
+        if (CachedRoomThinRates == null)
+        {
+            CachedRoomThinRates = new Dictionary<Room, float>();
+        }
+
+        if (CachedRoomThinRates.ContainsKey(roomToCheck) && GenTicks.TicksAbs % GenTicks.TickRareInterval != 0)
+        {
+            return CachedRoomThinRates[roomToCheck];
+        }
+
+        var AvgThinRate = 1f;
+
+        var map = roomToCheck.Map;
+        if (map == null || roomToCheck.UsesOutdoorTemperature)
+        {
+            CachedRoomThinRates[roomToCheck] = AvgThinRate;
             return AvgThinRate;
         }
 
-        // Token: 0x06000012 RID: 18 RVA: 0x000027CC File Offset: 0x000009CC
-        public static float GetAvgDeepRate(Room roomToCheck)
+        var totalThinFactor = 0f;
+        var totalThinCount = 0;
+        foreach (var intVec in roomToCheck.Cells)
         {
-            var AvgDeepRate = 1f;
-
-            var map = roomToCheck.Map;
-            if (map == null || roomToCheck.UsesOutdoorTemperature)
+            var roof = intVec.GetRoof(map);
+            if (roof == null || roof.isThickRoof)
             {
-                return AvgDeepRate;
+                continue;
             }
 
-            var totalDeepFactor = 0f;
-            var totalDeepCount = 0;
-            foreach (var intVec in roomToCheck.Cells)
-            {
-                var roof = intVec.GetRoof(map);
-                if (roof == null || !roof.isThickRoof)
-                {
-                    continue;
-                }
+            totalThinFactor += GetRoofInsulationFactor(roof, false);
+            totalThinCount++;
+        }
 
-                totalDeepFactor += GetRoofInsulationFactor(roof, true);
-                totalDeepCount++;
-            }
+        if (totalThinCount > 0)
+        {
+            AvgThinRate = totalThinFactor / totalThinCount;
+        }
 
-            if (totalDeepCount > 0)
-            {
-                AvgDeepRate = totalDeepFactor / totalDeepCount;
-            }
+        CachedRoomThinRates[roomToCheck] = AvgThinRate;
+        return AvgThinRate;
+    }
 
+    public static float GetAvgDeepRate(Room roomToCheck)
+    {
+        if (CachedRoomDeepRates == null)
+        {
+            CachedRoomDeepRates = new Dictionary<Room, float>();
+        }
+
+        if (CachedRoomDeepRates.ContainsKey(roomToCheck) && GenTicks.TicksAbs % GenTicks.TickRareInterval != 0)
+        {
+            return CachedRoomDeepRates[roomToCheck];
+        }
+
+        var AvgDeepRate = 1f;
+
+        var map = roomToCheck.Map;
+        if (map == null || roomToCheck.UsesOutdoorTemperature)
+        {
+            CachedRoomDeepRates[roomToCheck] = AvgDeepRate;
             return AvgDeepRate;
         }
 
-        // Token: 0x06000013 RID: 19 RVA: 0x00002874 File Offset: 0x00000A74
-        public static float GetRoofInsulationFactor(RoofDef roof, bool isThick)
+        var totalDeepFactor = 0f;
+        var totalDeepCount = 0;
+        foreach (var intVec in roomToCheck.Cells)
         {
-            return RoofValues.GetRVInsulationFactor(roof);
+            var roof = intVec.GetRoof(map);
+            if (roof == null || !roof.isThickRoof)
+            {
+                continue;
+            }
+
+            totalDeepFactor += GetRoofInsulationFactor(roof, true);
+            totalDeepCount++;
         }
+
+        if (totalDeepCount > 0)
+        {
+            AvgDeepRate = totalDeepFactor / totalDeepCount;
+        }
+
+        CachedRoomDeepRates[roomToCheck] = AvgDeepRate;
+        return AvgDeepRate;
+    }
+
+    public static float GetRoofInsulationFactor(RoofDef roof, bool isThick)
+    {
+        return RoofValues.GetRVInsulationFactor(roof);
     }
 }
