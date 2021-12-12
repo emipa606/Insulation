@@ -1,5 +1,8 @@
 # Changelog for Insulation
 
+1.0.14.0 - Added insulated versions of the ship hull from SOS2, both powered and unpowered versions. Thank you CMaia!
+
+
 1.0.13.0 - Added caching of the calculations of the isolation-values for rooms as they do not change that rapidly and where pretty costly.
 
 
