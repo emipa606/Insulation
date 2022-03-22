@@ -8,6 +8,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2000755840
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2195733555]Doors Expanded
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2412682633]Secret Passage Doors
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=1971860929][JPT] Open The Windows
+- Added support for https://steamcommunity.com/workshop/filedetails/?id=1909914131]Save Our Ship 2 via CMaia
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
