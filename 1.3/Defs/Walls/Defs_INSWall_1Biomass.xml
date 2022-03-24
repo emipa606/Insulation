@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="INSWall_Base">
+    <defName>INSWall_Biomass</defName>
+    <label>Insulated wall (Biomass)</label>
+    <description>An impassable wall, capable of holding up a roof. This wall is insulated with biomass.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/INSWall_Biomass</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/INSWall_Biomass/INSWall_BiomassSmooth_MenuIcon</uiIconPath>
+    <statBases>
+      <Flammability>1.2</Flammability>
+    </statBases>
+    <costStuffCount>3</costStuffCount>
+    <costList>
+      <INSSlab_Biomass>5</INSSlab_Biomass>
+    </costList>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/INSWall_Biomass/INSWall_Biomass_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <researchPrerequisites>
+      <li>InsulationBiomass</li>
+    </researchPrerequisites>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li Class="Insulation.CompProperties_BuildInsulation">
+        <HeatTransferFactor>0.75</HeatTransferFactor>
+        <InsulationStuff>true</InsulationStuff>
+      </li>
+    </comps>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>

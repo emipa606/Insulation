@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="INSWall_Base">
+    <defName>INSWall_Fibre</defName>
+    <label>Insulated wall (Fibres)</label>
+    <description>An impassable wall, capable of holding up a roof. This wall is insulated with fibres.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/INSWall_Fibre</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/INSWall_Fibre/INSWall_FibreSmooth_MenuIcon</uiIconPath>
+    <statBases>
+      <Flammability>1.1</Flammability>
+    </statBases>
+    <costStuffCount>3</costStuffCount>
+    <costList>
+      <INSSlab_Fibre>5</INSSlab_Fibre>
+    </costList>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/INSWall_Fibre/INSWall_Fibre_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <researchPrerequisites>
+      <li>InsulationFibres</li>
+    </researchPrerequisites>
+    <techLevel>Medieval</techLevel>
+    <comps>
+      <li Class="Insulation.CompProperties_BuildInsulation">
+        <HeatTransferFactor>0.40</HeatTransferFactor>
+        <InsulationStuff>true</InsulationStuff>
+      </li>
+    </comps>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>

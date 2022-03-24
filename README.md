@@ -9,6 +9,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2000755840
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2412682633]Secret Passage Doors
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=1971860929][JPT] Open The Windows
 - Added support for https://steamcommunity.com/workshop/filedetails/?id=1909914131]Save Our Ship 2 via CMaia
+- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene in all added SOS2 structures
+- Added support for https://steamcommunity.com/workshop/filedetails/?id=2012735237]Fertile Fields
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
