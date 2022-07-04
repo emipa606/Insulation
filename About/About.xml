@@ -30,6 +30,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2000755840
 - Added support for [url=https://steamcommunity.com/workshop/filedetails/?id=1909914131]Save Our Ship 2[/url] via CMaia
 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene[/url] in all added SOS2 structures
 - Added support for [url=https://steamcommunity.com/workshop/filedetails/?id=2012735237]Fertile Fields[/url]
+- Added support for BambooFiber from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2327252470]Primitive Workbenches[/url]
 
 [img]https://i.imgur.com/pufA0kM.png[/img]
 
@@ -37,7 +38,11 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2000755840
 	[tr]
 		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
 		[td][url=https://github.com/emipa606/Insulation][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
-	[/tr]
+    [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+    [/tr]
 [/table]
 	
 [img]https://i.imgur.com/Z4GOv8H.png[/img]
@@ -128,5 +133,6 @@ Japanese translation - Proxyer
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
+
 </description>
 </ModMetaData>

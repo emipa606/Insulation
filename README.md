@@ -11,6 +11,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2000755840
 - Added support for https://steamcommunity.com/workshop/filedetails/?id=1909914131]Save Our Ship 2 via CMaia
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene in all added SOS2 structures
 - Added support for https://steamcommunity.com/workshop/filedetails/?id=2012735237]Fertile Fields
+- Added support for BambooFiber from https://steamcommunity.com/sharedfiles/filedetails/?id=2327252470]Primitive Workbenches
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
@@ -113,6 +114,7 @@ Japanese translation - Proxyer
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

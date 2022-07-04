@@ -1,5 +1,8 @@
 # Changelog for Insulation
 
+1.3.3 - Added archotech variants of the SOS hulls and airlocks
+
+
 1.3.2 - Added support for BambooFiber from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2327252470]Primitive Workbenches[/url]
 
 
