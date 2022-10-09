@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Ship_Beam_Unpowered"]</xpath>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <!-- Hull Bases -->
+            <ThingDef ParentName="BuildingBase" Name="INSShip_Beam_Base" Abstract="True">
+              <thingClass>Building</thingClass>
+              <graphicData>
+                <graphicClass>Graphic_Single</graphicClass>
+                <linkType>Basic</linkType>
+                <linkFlags>
+                  <li>Wall</li>
+                  <li>Rock</li>
+                </linkFlags>
+                <damageData>
+                  <cornerTL>Damage/Corner</cornerTL>
+                  <cornerTR>Damage/Corner</cornerTR>
+                  <cornerBL>Damage/Corner</cornerBL>
+                  <cornerBR>Damage/Corner</cornerBR>
+                  <edgeTop>Damage/Edge</edgeTop>
+                  <edgeBot>Damage/Edge</edgeBot>
+                  <edgeLeft>Damage/Edge</edgeLeft>
+                  <edgeRight>Damage/Edge</edgeRight>
+                </damageData>
+              </graphicData>
+              <designatorDropdown>Ship_Beams</designatorDropdown>
+              <altitudeLayer>Building</altitudeLayer>
+              <passability>Impassable</passability>
+              <blockWind>true</blockWind>
+              <castEdgeShadows>true</castEdgeShadows>
+              <fillPercent>1</fillPercent>
+              <blockLight>true</blockLight>
+              <canOverlapZones>false</canOverlapZones>
+              <statBases>
+                <WorkToBuild>2000</WorkToBuild>
+                <MaxHitPoints>850</MaxHitPoints>
+                <Flammability>0.6</Flammability>
+              </statBases>
+              <designationCategory>Ship</designationCategory>
+              <placingDraggableDimensions>1</placingDraggableDimensions>
+              <comps>
+                <li Class="CompProperties_RoofMe" />
+                <li>
+                  <compClass>CompColorable</compClass>
+                </li>
+              </comps>
+              <placeWorkers>
+              </placeWorkers>
+              <rotatable>false</rotatable>
+              <building>
+                <shipPart>true</shipPart>
+                <blueprintGraphicData>
+                  <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+                </blueprintGraphicData>
+              </building>
+              <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+              <staticSunShadowHeight>1.0</staticSunShadowHeight>
+              <designationHotKey>Misc1</designationHotKey>
+              <holdsRoof>true</holdsRoof>
+              <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+              <killedLeavings>
+                <ChunkSlagSteel>1</ChunkSlagSteel>
+              </killedLeavings>
+              <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Base" Name="INSShip_Beam_Powered_Base" Abstract="True">
+              <comps>
+                <li Class="CompProperties_Power">
+                  <compClass>CompPowerTransmitter</compClass>
+                  <transmitsPower>true</transmitsPower>
+                </li>
+                <li Class="CompProperties_ShipHeat">
+                  <compClass>CompShipHeat</compClass>
+                </li>
+              </comps>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Base" Name="INSShip_Beam_Archo_Base" Abstract="True">
+              <designatorDropdown>Ship_Beams_Archotech</designatorDropdown>
+              <statBases>
+                <WorkToBuild>1600</WorkToBuild>
+                <MaxHitPoints>1500</MaxHitPoints>
+                <Flammability>0</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <comps>
+                <li Class="CompProperties_SoSUnlock">
+                  <unlock>ArchotechUplink</unlock>
+                </li>
+              </comps>
+              <tickerType>Normal</tickerType>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Powered_Base" Name="INSShip_Beam_Powered_Archo_Base" Abstract="True">
+              <designatorDropdown>Ship_Beams_Archotech</designatorDropdown>
+              <graphicData>
+                <texPath>Things/Building/Linked/Biomass_ShipBeam_Archotech_Atlas</texPath>
+              </graphicData>
+              <statBases>
+                <WorkToBuild>1600</WorkToBuild>
+                <MaxHitPoints>1500</MaxHitPoints>
+                <Flammability>0</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <comps>
+                <li Class="CompProperties_SoSUnlock">
+                  <unlock>ArchotechUplink</unlock>
+                </li>
+              </comps>
+              <tickerType>Normal</tickerType>
+            </ThingDef>
+            <!-- Biomass -->
+            <ThingDef ParentName="INSShip_Beam_Powered_Base">
+              <defName>INSShip_Beam_Biomass</defName>
+              <label>Insulated ship hull (Biomass)</label>
+              <description>The outer structural elements of a ship's hull. Includes conduits for power, life-support gases, and coolant. This hull is insulated with biomass.</description>
+              <graphicData>
+                <texPath>Things/Building/Linked/Biomass_ShipBeam_Atlas</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Hull/Biomass_ShipBeamModular_north</uiIconPath>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.75</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+                <li>InsulationBiomass</li>
+              </researchPrerequisites>
+              <costList>
+                <Steel>16</Steel>
+                <Plasteel>4</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <INSSlab_Biomass>5</INSSlab_Biomass>
+              </costList>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Powered_Archo_Base">
+              <defName>INSShip_BeamArchotech_Biomass</defName>
+              <label>Insulated archotech ship hull (Biomass)</label>
+              <description>The outer structural elements of a archotech-designed ship's hull. Includes conduits for power and coolant. This hull is insulated with biomass.</description>
+              <graphicData>
+                <texPath>Things/Building/Linked/Biomass_ShipBeam_Archotech_Atlas</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Hull/Biomass_ShipBeamArchotech_north</uiIconPath>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.75</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <researchPrerequisites>
+                <li>InsulationBiomass</li>
+              </researchPrerequisites>
+              <costList>
+                <Steel>15</Steel>
+                <Plasteel>5</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <Gold>10</Gold>
+                <INSSlab_Biomass>5</INSSlab_Biomass>
+              </costList>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Base">
+              <defName>INSShip_Beam_Underpowered_Biomass_Unpowered</defName>
+              <label>Insulated ship hull (Biomass, unpowered)</label>
+              <graphicData>
+                <texPath>Things/Building/Linked/Biomass_ShipBeam_Unpowered_Atlas</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Hull/Biomass_ShipBeamModular_east</uiIconPath>
+              <description>The outer structural elements of a ship's hull. Does not include conduits for power or coolant. This hull is insulated with biomass.</description>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.75</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+                <li>InsulationBiomass</li>
+              </researchPrerequisites>
+              <costList>
+                <Steel>14</Steel>
+                <Plasteel>3</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <INSSlab_Biomass>5</INSSlab_Biomass>
+              </costList>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Archo_Base">
+              <defName>INSShip_BeamArchotech_Biomass_Unpowered</defName>
+              <label>Insulated archotech ship hull (Biomass, unpowered)</label>
+              <uiIconPath>Things/Building/Hull/Biomass_ShipBeamArchotech_east</uiIconPath>
+              <description>The outer structural elements of an archotech-designed ship's hull. Does not include conduits for power or coolant. This hull is insulated with biomass.</description>
+              <graphicData>
+                <texPath>Things/Building/Linked/Biomass_ShipBeam_Archotech_Atlas</texPath>
+              </graphicData>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.75</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <researchPrerequisites>
+                <li>InsulationBiomass</li>
+              </researchPrerequisites>
+              <costList>
+                <Steel>13</Steel>
+                <Plasteel>4</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <Gold>10</Gold>
+                <INSSlab_Biomass>5</INSSlab_Biomass>
+              </costList>
+            </ThingDef>
+            <!-- Fibre -->
+            <ThingDef ParentName="INSShip_Beam_Powered_Base">
+              <defName>INSShip_Beam_Fibre</defName>
+              <label>Insulated ship hull (Fibre)</label>
+              <graphicData>
+                <texPath>Things/Building/Linked/Fibre_ShipBeam_Atlas</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Hull/Fibre_ShipBeamModular_north</uiIconPath>
+              <description>The outer structural elements of a ship's hull. Includes conduits for power, life-support gases, and coolant. This hull is insulated with fibres.</description>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.40</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>16</Steel>
+                <Plasteel>4</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <INSSlab_Fibre>5</INSSlab_Fibre>
+              </costList>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+                <li>InsulationFibres</li>
+              </researchPrerequisites>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Powered_Archo_Base">
+              <defName>INSShip_BeamArchotech_Fibre</defName>
+              <label>Insulated archotech ship hull (Fibre)</label>
+              <uiIconPath>Things/Building/Hull/Fibre_ShipBeamArchotech_north</uiIconPath>
+              <description>The outer structural elements of a archotech-designed ship's hull. Includes conduits for power and coolant. This hull is insulated with fibres.</description>
+              <graphicData>
+                <texPath>Things/Building/Linked/Fibre_ShipBeam_Archotech_Atlas</texPath>
+              </graphicData>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.40</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>15</Steel>
+                <Plasteel>5</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <Gold>10</Gold>
+                <INSSlab_Fibre>5</INSSlab_Fibre>
+              </costList>
+              <researchPrerequisites>
+                <li>InsulationFibres</li>
+              </researchPrerequisites>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Base">
+              <defName>INSShip_Beam_Underpowered_Fibre_Unpowered</defName>
+              <label>Insulated ship hull (Fibre, unpowered)</label>
+              <graphicData>
+                <texPath>Things/Building/Linked/Fibre_ShipBeam_Unpowered_Atlas</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Hull/Fibre_ShipBeamModular_east</uiIconPath>
+              <description>The outer structural elements of a ship's hull. Does not include conduits for power or coolant. This hull is insulated with fibres.</description>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.40</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>14</Steel>
+                <Plasteel>3</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <INSSlab_Fibre>5</INSSlab_Fibre>
+              </costList>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+                <li>InsulationFibres</li>
+              </researchPrerequisites>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Archo_Base">
+              <defName>INSShip_BeamArchotech_Fibre_Unpowered</defName>
+              <label>Insulated archotech ship hull (Fibre, unpowered)</label>
+              <uiIconPath>Things/Building/Hull/Fibre_ShipBeamArchotech_east</uiIconPath>
+              <description>The outer structural elements of an archotech-designed ship's hull. Does not include conduits for power or coolant. This hull is insulated with fibres.</description>
+              <graphicData>
+                <texPath>Things/Building/Linked/Fibre_ShipBeam_Archotech_Atlas</texPath>
+              </graphicData>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.40</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>13</Steel>
+                <Plasteel>4</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <Gold>10</Gold>
+                <INSSlab_Fibre>5</INSSlab_Fibre>
+              </costList>
+              <researchPrerequisites>
+                <li>InsulationFibres</li>
+              </researchPrerequisites>
+            </ThingDef>
+            <!-- Hyper -->
+            <ThingDef ParentName="INSShip_Beam_Powered_Base">
+              <defName>INSShip_Beam_Hyper</defName>
+              <label>Insulated ship hull (Hyper)</label>
+              <graphicData>
+                <texPath>Things/Building/Linked/Hyper_ShipBeam_Atlas</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Hull/Hyper_ShipBeamModular_north</uiIconPath>
+              <description>The outer structural elements of a ship's hull. Includes conduits for power, life-support gases, and coolant. This hull is insulated with advanced materials.</description>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.05</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>16</Steel>
+                <Plasteel>4</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <INSSlab_Hyper>5</INSSlab_Hyper>
+              </costList>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+                <li>InsulationHyper</li>
+              </researchPrerequisites>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Powered_Archo_Base">
+              <defName>INSShip_BeamArchotech_Hyper</defName>
+              <label>Insulated archotech ship hull (Hyper)</label>
+              <uiIconPath>Things/Building/Hull/Hyper_ShipBeamArchotech_north</uiIconPath>
+              <description>The outer structural elements of a archotech-designed ship's hull. Includes conduits for power and coolant. This hull is insulated with advanced materials.</description>
+              <graphicData>
+                <texPath>Things/Building/Linked/Hyper_ShipBeam_Archotech_Atlas</texPath>
+              </graphicData>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.05</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>15</Steel>
+                <Plasteel>5</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <Gold>10</Gold>
+                <INSSlab_Hyper>5</INSSlab_Hyper>
+              </costList>
+              <researchPrerequisites>
+                <li>InsulationHyper</li>
+              </researchPrerequisites>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Base">
+              <defName>INSShip_Beam_Underpowered_Hyper_Unpowered</defName>
+              <label>Insulated ship hull (Hyper, unpowered)</label>
+              <graphicData>
+                <texPath>Things/Building/Linked/Hyper_ShipBeam_Unpowered_Atlas</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Hull/Hyper_ShipBeamModular_east</uiIconPath>
+              <description>The outer structural elements of a ship's hull. Does not include conduits for power or coolant. This hull is insulated with advanced materials.</description>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.05</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>14</Steel>
+                <Plasteel>3</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <INSSlab_Hyper>5</INSSlab_Hyper>
+              </costList>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+                <li>InsulationHyper</li>
+              </researchPrerequisites>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Archo_Base">
+              <defName>INSShip_BeamArchotech_Hyper_Unpowered</defName>
+              <label>Insulated archotech ship hull (Hyper, unpowered)</label>
+              <uiIconPath>Things/Building/Hull/Hyper_ShipBeamArchotech_east</uiIconPath>
+              <description>The outer structural elements of an archotech-designed ship's hull. Does not include conduits for power or coolant. This hull is insulated with advanced materials.</description>
+              <graphicData>
+                <texPath>Things/Building/Linked/Hyper_ShipBeam_Archotech_Atlas</texPath>
+              </graphicData>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.05</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>13</Steel>
+                <Plasteel>4</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <Gold>10</Gold>
+                <INSSlab_Hyper>5</INSSlab_Hyper>
+              </costList>
+              <researchPrerequisites>
+                <li>InsulationHyper</li>
+              </researchPrerequisites>
+            </ThingDef>
+            <!-- Polymer -->
+            <ThingDef ParentName="INSShip_Beam_Powered_Base">
+              <defName>INSShip_Beam_Polymer</defName>
+              <label>Insulated ship hull (Polymer)</label>
+              <graphicData>
+                <texPath>Things/Building/Linked/Polymer_ShipBeam_Atlas</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Hull/Polymer_ShipBeamModular_north</uiIconPath>
+              <description>The outer structural elements of a ship's hull. Includes conduits for power, life-support gases, and coolant. This hull is insulated with synthetic polymers.</description>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.20</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>16</Steel>
+                <Plasteel>4</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <INSSlab_Polymer>5</INSSlab_Polymer>
+              </costList>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+                <li>InsulationPolymers</li>
+              </researchPrerequisites>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Powered_Archo_Base">
+              <defName>INSShip_BeamArchotech_Polymer</defName>
+              <label>Insulated archotech ship hull (Polymer)</label>
+              <uiIconPath>Things/Building/Hull/Polymer_ShipBeamArchotech_north</uiIconPath>
+              <description>The outer structural elements of a archotech-designed ship's hull. Includes conduits for power and coolant. This hull is insulated with synthetic polymers.</description>
+              <graphicData>
+                <texPath>Things/Building/Linked/Polymer_ShipBeam_Archotech_Atlas</texPath>
+              </graphicData>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.20</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>15</Steel>
+                <Plasteel>5</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <Gold>10</Gold>
+                <INSSlab_Polymer>5</INSSlab_Polymer>
+              </costList>
+              <researchPrerequisites>
+                <li>InsulationPolymers</li>
+              </researchPrerequisites>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Base">
+              <defName>INSShip_Beam_Underpowered_Polymer_Unpowered</defName>
+              <label>Insulated ship hull (Polymer, unpowered)</label>
+              <graphicData>
+                <texPath>Things/Building/Linked/Polymer_ShipBeam_Unpowered_Atlas</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Hull/Polymer_ShipBeamModular_east</uiIconPath>
+              <description>The outer structural elements of a ship's hull. Does not include conduits for power or coolant. This hull is insulated with synthetic polymers.</description>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.20</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>14</Steel>
+                <Plasteel>3</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <INSSlab_Polymer>5</INSSlab_Polymer>
+              </costList>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+                <li>InsulationPolymers</li>
+              </researchPrerequisites>
+            </ThingDef>
+            <ThingDef ParentName="INSShip_Beam_Archo_Base">
+              <defName>INSShip_BeamArchotech_Polymer_Unpowered</defName>
+              <label>Insulated archotech ship hull (Polymer, unpowered)</label>
+              <uiIconPath>Things/Building/Hull/Polymer_ShipBeamArchotech_east</uiIconPath>
+              <description>The outer structural elements of an archotech-designed ship's hull. Does not include conduits for power or coolant. This hull is insulated with synthetic polymers.</description>
+              <graphicData>
+                <texPath>Things/Building/Linked/Polymer_ShipBeam_Archotech_Atlas</texPath>
+              </graphicData>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.20</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>13</Steel>
+                <Plasteel>4</Plasteel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+                <Gold>10</Gold>
+                <INSSlab_Polymer>5</INSSlab_Polymer>
+              </costList>
+              <researchPrerequisites>
+                <li>InsulationPolymers</li>
+              </researchPrerequisites>
+            </ThingDef>
+            <!-- Airlock bases -->
+            <ThingDef ParentName="BuildingBase" Name="INSAirlockBase" Abstract="True">
+              <designatorDropdown>Ship_Airlocks</designatorDropdown>
+              <description>Allows access to a ship or divides rooms inside it. Low-energy plasma barriers prevent gases from escaping.</description>
+              <category>Building</category>
+              <thingClass>Building_ShipAirlock</thingClass>
+              <designationCategory>Ship</designationCategory>
+              <altitudeLayer>DoorMoveable</altitudeLayer>
+              <fillPercent>1</fillPercent>
+              <useHitPoints>true</useHitPoints>
+              <graphicData>
+                <graphicClass>Graphic_Single</graphicClass>
+                <damageData>
+                  <enabled>false</enabled>
+                </damageData>
+              </graphicData>
+              <comps>
+                <li Class="CompProperties_Power">
+                  <compClass>CompPowerTrader</compClass>
+                  <basePowerConsumption>50</basePowerConsumption>
+                  <transmitsPower>true</transmitsPower>
+                </li>
+                <li Class="CompProperties_ShipPart" />
+                <li Class="CompProperties_Forbiddable" />
+                <li Class="CompProperties_RoofMe" />
+                <li Class="CompProperties_ShipHeat">
+                  <compClass>CompShipHeat</compClass>
+                </li>
+                <li>
+                  <compClass>CompColorable</compClass>
+                </li>
+              </comps>
+              <designationHotKey>Misc2</designationHotKey>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+              </researchPrerequisites>
+              <statBases>
+                <WorkToBuild>1200</WorkToBuild>
+                <MaxHitPoints>500</MaxHitPoints>
+                <Flammability>0.0</Flammability>
+              </statBases>
+              <selectable>true</selectable>
+              <tickerType>Normal</tickerType>
+              <rotatable>false</rotatable>
+              <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+              <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+              <holdsRoof>true</holdsRoof>
+              <staticSunShadowHeight>1.0</staticSunShadowHeight>
+              <blockLight>true</blockLight>
+              <drawerType>RealtimeOnly</drawerType>
+              <building>
+                <shipPart>true</shipPart>
+                <isInert>true</isInert>
+                <canPlaceOverWall>true</canPlaceOverWall>
+                <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+                <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+                <soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+                <soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+                <blueprintGraphicData>
+                  <texPath>Things/Building/Door/Door_Blueprint</texPath>
+                </blueprintGraphicData>
+                <blueprintClass>Blueprint_Door</blueprintClass>
+                <roamerCanOpen>false</roamerCanOpen>
+              </building>
+              <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+            </ThingDef>
+            <ThingDef ParentName="INSAirlockBase" Name="INSAirlockArchotechBase" Abstract="True">
+              <comps Inherit="False">
+                <li Class="CompProperties_Power">
+                  <compClass>CompPowerTrader</compClass>
+                  <basePowerConsumption>20</basePowerConsumption>
+                  <transmitsPower>true</transmitsPower>
+                </li>
+                <li Class="CompProperties_ShipPart" />
+                <li Class="CompProperties_Forbiddable" />
+                <li Class="CompProperties_RoofMe">
+                  <archotech>true</archotech>
+                </li>
+                <li Class="CompProperties_ShipHeat">
+                  <compClass>CompShipHeat</compClass>
+                </li>
+                <li Class="CompProperties_SoSUnlock">
+                  <unlock>ArchotechUplink</unlock>
+                </li>
+                <li>
+                  <compClass>CompColorable</compClass>
+                </li>
+              </comps>
+              <statBases>
+                <WorkToBuild>1200</WorkToBuild>
+                <MaxHitPoints>1000</MaxHitPoints>
+                <Flammability>0.0</Flammability>
+              </statBases>
+            </ThingDef>
+            <!-- Biomass -->
+            <ThingDef ParentName="INSAirlockBase">
+              <defName>ShipAirlockBiomass</defName>
+              <label>insulated ship airlock (biomass)</label>
+              <graphicData>
+                <texPath>Things/Building/Door/SOS2/AirlockBiomass_Mover</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Door/SOS2/AirlockBiomass_UI</uiIconPath>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.75</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>40</Steel>
+                <ComponentSpacer>1</ComponentSpacer>
+                <Plasteel>25</Plasteel>
+                <INSSlab_Biomass>5</INSSlab_Biomass>
+              </costList>
+            </ThingDef>
+            <ThingDef ParentName="INSAirlockArchotechBase">
+              <defName>ShipAirlockArchotechBiomass</defName>
+              <label>insulated archotech ship airlock (biomass)</label>
+              <graphicData>
+                <texPath>Things/Building/Door/SOS2/ArchoAirlockBiomass_Mover</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Door/SOS2/ArchoAirlockBiomass_UI</uiIconPath>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.75</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>40</Steel>
+                <ComponentSpacer>1</ComponentSpacer>
+                <Plasteel>25</Plasteel>
+                <Gold>50</Gold>
+                <INSSlab_Biomass>5</INSSlab_Biomass>
+              </costList>
+            </ThingDef>
+            <!-- Fibre -->
+            <ThingDef ParentName="INSAirlockBase">
+              <defName>ShipAirlockFibre</defName>
+              <label>insulated ship airlock (fibre)</label>
+              <graphicData>
+                <texPath>Things/Building/Door/SOS2/AirlockFibre_Mover</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Door/SOS2/AirlockFibre_UI</uiIconPath>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.40</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>40</Steel>
+                <ComponentSpacer>1</ComponentSpacer>
+                <Plasteel>25</Plasteel>
+                <INSSlab_Fibre>5</INSSlab_Fibre>
+              </costList>
+            </ThingDef>
+            <ThingDef ParentName="INSAirlockArchotechBase">
+              <defName>ShipAirlockArchotechFibre</defName>
+              <label>insulated archotech ship airlock (fibre)</label>
+              <graphicData>
+                <texPath>Things/Building/Door/SOS2/ArchoAirlockFibre_Mover</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Door/SOS2/ArchoAirlockFibre_UI</uiIconPath>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.40</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>40</Steel>
+                <ComponentSpacer>1</ComponentSpacer>
+                <Plasteel>25</Plasteel>
+                <Gold>50</Gold>
+                <INSSlab_Fibre>5</INSSlab_Fibre>
+              </costList>
+            </ThingDef>
+            <!-- Hyper -->
+            <ThingDef ParentName="INSAirlockBase">
+              <defName>ShipAirlockHyper</defName>
+              <label>insulated ship airlock (hyper)</label>
+              <graphicData>
+                <texPath>Things/Building/Door/SOS2/AirlockHyper_Mover</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Door/SOS2/AirlockHyper_UI</uiIconPath>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.05</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>40</Steel>
+                <ComponentSpacer>1</ComponentSpacer>
+                <Plasteel>25</Plasteel>
+                <INSSlab_Hyper>5</INSSlab_Hyper>
+              </costList>
+            </ThingDef>
+            <ThingDef ParentName="INSAirlockArchotechBase">
+              <defName>ShipAirlockArchotechHyper</defName>
+              <label>insulated archotech ship airlock (hyper)</label>
+              <graphicData>
+                <texPath>Things/Building/Door/SOS2/ArchoAirlockHyper_Mover</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Door/SOS2/ArchoAirlockHyper_UI</uiIconPath>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.05</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>40</Steel>
+                <ComponentSpacer>1</ComponentSpacer>
+                <Plasteel>25</Plasteel>
+                <Gold>50</Gold>
+                <INSSlab_Hyper>5</INSSlab_Hyper>
+              </costList>
+            </ThingDef>
+            <!-- Polymer -->
+            <ThingDef ParentName="INSAirlockBase">
+              <defName>ShipAirlockPolymer</defName>
+              <label>insulated ship airlock (polymer)</label>
+              <graphicData>
+                <texPath>Things/Building/Door/SOS2/AirlockPolymer_Mover</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Door/SOS2/AirlockPolymer_UI</uiIconPath>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.20</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>40</Steel>
+                <ComponentSpacer>1</ComponentSpacer>
+                <Plasteel>25</Plasteel>
+                <INSSlab_Polymer>5</INSSlab_Polymer>
+              </costList>
+            </ThingDef>
+            <ThingDef ParentName="INSAirlockArchotechBase">
+              <defName>ShipAirlockArchotechPolymer</defName>
+              <label>insulated archotech ship airlock (polymer)</label>
+              <graphicData>
+                <texPath>Things/Building/Door/SOS2/ArchoAirlockPolymer_Mover</texPath>
+              </graphicData>
+              <uiIconPath>Things/Building/Door/SOS2/ArchoAirlockPolymer_UI</uiIconPath>
+              <comps>
+                <li Class="Insulation.CompProperties_BuildInsulation">
+                  <HeatTransferFactor>0.20</HeatTransferFactor>
+                  <InsulationStuff>true</InsulationStuff>
+                </li>
+              </comps>
+              <costList>
+                <Steel>40</Steel>
+                <ComponentSpacer>1</ComponentSpacer>
+                <Plasteel>25</Plasteel>
+                <Gold>50</Gold>
+                <INSSlab_Polymer>5</INSSlab_Polymer>
+              </costList>
+            </ThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="ShowerStuff"]</xpath>
+          <success>Always</success>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[@Name="INSShip_Beam_Base" or @Name="INSAirlockBase"]/comps</xpath>
+            <value>
+              <li Class="DubsBadHygiene.CompProperties_Pipe">
+                <mode>Sewage</mode>
+              </li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[@Name="RFC_DoorBase"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="RFC_DoorBase"]/comps</xpath>
+        <value>
+          <li Class="Insulation.CompProperties_BuildInsulation">
+            <HeatTransferFactor>0.60</HeatTransferFactor>
+            <InsulationStuff>true</InsulationStuff>
+            <HitPointsNeed>0.25</HitPointsNeed>
+          </li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationTest">
+        <xpath>/Defs/ThingDef[@Name="RFC_WallBase"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="RFC_WallBase"]</xpath>
+        <value>
+          <comps>
+            <li Class="Insulation.CompProperties_BuildInsulation">
+              <HeatTransferFactor>0.60</HeatTransferFactor>
+              <InsulationStuff>true</InsulationStuff>
+              <HitPointsNeed>0.25</HitPointsNeed>
+            </li>
+          </comps>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchTabDef>
+    <defName>InsulationTab</defName>
+    <label>Insulation</label>
+  </ResearchTabDef>
+  <ResearchProjectDef>
+    <defName>InsulationBiomass</defName>
+    <label>Insulation (Biomass)</label>
+    <description>Grants the ability to insulate walls and doors with biomass.</description>
+    <baseCost>250</baseCost>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+    <techLevel>Neolithic</techLevel>
+    <tab>InsulationTab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>InsulationFibres</defName>
+    <label>Insulation (Fibres)</label>
+    <description>Grants the ability to insulate walls and doors with fibres.</description>
+    <baseCost>500</baseCost>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>InsulationBiomass</li>
+      <li>CarpetMaking</li>
+    </prerequisites>
+    <tab>InsulationTab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>InsulationPolymers</defName>
+    <label>Insulation (Polymers)</label>
+    <description>Grants the ability to insulate walls and doors with synthetic polymers.</description>
+    <baseCost>750</baseCost>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1</researchViewY>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>InsulationFibres</li>
+      <li>BiofuelRefining</li>
+    </prerequisites>
+    <tab>InsulationTab</tab>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>InsulationHyper</defName>
+    <label>Insulation (Hyper)</label>
+    <description>Grants the ability to insulate walls and doors with advanced materials.</description>
+    <baseCost>1000</baseCost>
+    <researchViewX>4</researchViewX>
+    <researchViewY>1</researchViewY>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>InsulationPolymers</li>
+      <li>SterileMaterials</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <tab>InsulationTab</tab>
+  </ResearchProjectDef>
+</Defs>

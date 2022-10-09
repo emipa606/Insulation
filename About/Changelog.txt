@@ -1,5 +1,9 @@
 # Changelog for Insulation
 
+1.4.1 - Mod updated for 1.4 and passed autotests.
+Used DeepL to update translations for ChineseSimplified, Czech, Danish, Dutch, Estonian, Finnish, French, German, Hungarian, Italian, Japanese, Polish, Portuguese, Romanian, Russian, Slovak, Spanish, Swedish, Turkish
+
+
 1.3.3 - Added archotech variants of the SOS hulls and airlocks
 
 

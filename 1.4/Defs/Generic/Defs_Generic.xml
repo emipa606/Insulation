@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DesignationCategoryDef>
+    <defName>Insulation_Desig</defName>
+    <label>Insulation</label>
+    <description>Insulated items</description>
+    <order>332</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  <ThingCategoryDef>
+    <defName>INS_Insulation</defName>
+    <label>Insulation materials</label>
+    <parent>Manufactured</parent>
+    <iconPath>UI/Icons/ThingCategories/Manufactured</iconPath>
+  </ThingCategoryDef>
+</Defs>

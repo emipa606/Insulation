@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <Insulation.Name>Insulation</Insulation.Name>
+  <Insulation.Modversion>Installed mod-version: {0}</Insulation.Modversion>
   <Insulation.pctEffective>Percentage effectiveness [default 100%]:</Insulation.pctEffective>
 </LanguageData>

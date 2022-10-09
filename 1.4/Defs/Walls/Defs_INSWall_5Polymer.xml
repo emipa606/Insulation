@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="INSWall_Base">
+    <defName>INSWall_Polymer</defName>
+    <label>Insulated wall (Polymers)</label>
+    <description>An impassable wall, capable of holding up a roof. This wall is insulated with synthetic polymers.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/INSWall_Polymer</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/INSWall_Polymer/INSWall_PolymerSmooth_MenuIcon</uiIconPath>
+    <statBases>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costStuffCount>3</costStuffCount>
+    <costList>
+      <INSSlab_Polymer>5</INSSlab_Polymer>
+    </costList>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/INSWall_Polymer/INSWall_Polymer_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <researchPrerequisites>
+      <li>InsulationPolymers</li>
+    </researchPrerequisites>
+    <techLevel>Industrial</techLevel>
+    <comps>
+      <li Class="Insulation.CompProperties_BuildInsulation">
+        <HeatTransferFactor>0.20</HeatTransferFactor>
+        <InsulationStuff>true</InsulationStuff>
+      </li>
+    </comps>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>
