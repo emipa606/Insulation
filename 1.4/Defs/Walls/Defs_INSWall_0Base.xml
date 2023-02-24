@@ -51,6 +51,7 @@
     <building>
       <isInert>true</isInert>
       <ai_chillDestination>false</ai_chillDestination>
+      <paintable>true</paintable>
     </building>
     <damageMultipliers Inherit="false">
       <li>
