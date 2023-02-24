@@ -118,3 +118,4 @@ Japanese translation - Proxyer
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2196454890]Last updated 2023-02-24
