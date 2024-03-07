@@ -45,7 +45,11 @@
               <designationCategory>Ship</designationCategory>
               <placingDraggableDimensions>1</placingDraggableDimensions>
               <comps>
-                <li Class="CompProperties_RoofMe" />
+                <li Class="CompProperties_SoShipPart">
+                  <isHull>true</isHull>
+                  <hermetic>true</hermetic>
+                  <roof>true</roof>
+                </li>
                 <li>
                   <compClass>CompColorable</compClass>
                 </li>
@@ -58,6 +62,7 @@
                 <blueprintGraphicData>
                   <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
                 </blueprintGraphicData>
+                <paintable>true</paintable>
               </building>
               <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
               <staticSunShadowHeight>1.0</staticSunShadowHeight>
@@ -68,6 +73,9 @@
                 <ChunkSlagSteel>1</ChunkSlagSteel>
               </killedLeavings>
               <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+              </researchPrerequisites>
             </ThingDef>
             <ThingDef ParentName="INSShip_Beam_Base" Name="INSShip_Beam_Powered_Base" Abstract="True">
               <comps>
@@ -539,9 +547,13 @@
                   <basePowerConsumption>50</basePowerConsumption>
                   <transmitsPower>true</transmitsPower>
                 </li>
-                <li Class="CompProperties_ShipPart" />
+                <li Class="CompProperties_SoShipPart">
+                  <isHull>true</isHull>
+                  <isPlating>true</isPlating>
+                  <hermetic>true</hermetic>
+                  <roof>true</roof>
+                </li>
                 <li Class="CompProperties_Forbiddable" />
-                <li Class="CompProperties_RoofMe" />
                 <li Class="CompProperties_ShipHeat">
                   <compClass>CompShipHeat</compClass>
                 </li>
@@ -590,11 +602,13 @@
                   <basePowerConsumption>20</basePowerConsumption>
                   <transmitsPower>true</transmitsPower>
                 </li>
-                <li Class="CompProperties_ShipPart" />
-                <li Class="CompProperties_Forbiddable" />
-                <li Class="CompProperties_RoofMe">
-                  <archotech>true</archotech>
+                <li Class="CompProperties_SoShipPart">
+                  <isHull>true</isHull>
+                  <isPlating>true</isPlating>
+                  <hermetic>true</hermetic>
+                  <roof>true</roof>
                 </li>
+                <li Class="CompProperties_Forbiddable" />
                 <li Class="CompProperties_ShipHeat">
                   <compClass>CompShipHeat</compClass>
                 </li>

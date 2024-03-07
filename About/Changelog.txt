@@ -1,5 +1,8 @@
 # Changelog for Insulation
 
+1.4.3 - Fixed the SOS patch for walls and airlocks
+
+
 1.4.2 - Let walls inherit from the vanilla walls instead for compatibility
 
 
