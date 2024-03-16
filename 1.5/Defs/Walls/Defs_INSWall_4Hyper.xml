@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="INSWall_Base">
+    <defName>INSWall_Hyper</defName>
+    <label>Insulated wall (Hyper)</label>
+    <description>An impassable wall, capable of holding up a roof. This wall is insulated with advanced materials.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/INSWall_Hyper</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/INSWall_Hyper/INSWall_HyperSmooth_MenuIcon</uiIconPath>
+    <statBases>
+      <Flammability>0.4</Flammability>
+      <Cleanliness>0.7</Cleanliness>
+    </statBases>
+    <costStuffCount>3</costStuffCount>
+    <costList>
+      <INSSlab_Hyper>5</INSSlab_Hyper>
+    </costList>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/INSWall_Hyper/INSWall_Hyper_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <researchPrerequisites>
+      <li>InsulationHyper</li>
+    </researchPrerequisites>
+    <techLevel>Spacer</techLevel>
+    <comps>
+      <li Class="Insulation.CompProperties_BuildInsulation">
+        <HeatTransferFactor>0.05</HeatTransferFactor>
+        <InsulationStuff>true</InsulationStuff>
+      </li>
+    </comps>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>

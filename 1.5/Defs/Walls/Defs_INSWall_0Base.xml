@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="Wall" Name="INSWall_Base" Abstract="True">
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>180</WorkToBuild>
+    </statBases>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Insulation_Desig</designationCategory>
+    <damageMultipliers Inherit="false">
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2.25</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>2.25</multiplier>
+      </li>
+    </damageMultipliers>
+    <designationHotKey>Misc3</designationHotKey>
+  </ThingDef>
+</Defs>

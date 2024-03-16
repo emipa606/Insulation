@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>INSSlab_Biomass</defName>
+    <label>Insulation slab (biomass)</label>
+    <description>Insulation material formed into a workable slab. Can be used as compacted animal feed.</description>
+    <graphicData>
+      <texPath>Things/Item/INSSlab_Biomass</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>3.0</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>1.2</Flammability>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <FoodPoisonChanceFixedHuman>0.2</FoodPoisonChanceFixedHuman>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnlyForHumanlikes</preferability>
+      <foodType>Plant</foodType>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+      <optimalityOffsetFeedingAnimals>5</optimalityOffsetFeedingAnimals>
+    </ingestible>
+    <thingCategories>
+      <li>INS_Insulation</li>
+      <li>Foods</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>100</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+    <techLevel>Neolithic</techLevel>
+  </ThingDef>
+  <RecipeDef>
+    <defName>Make_INSSlab_Biomass</defName>
+    <label>Make Insulation slabs (biomass)</label>
+    <description>Make 5 Insulation slabs (biomass).</description>
+    <workAmount>250</workAmount>
+    <jobString>Making insulation slabs.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Hay</li>
+        <li MayRequire="dismarzero.VGP.VGPVegetableGarden,PrimitiveProduction.velcroboy333">VBY_BambooFiber</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>TableButcher</li>
+      <li>ButcherSpot</li>
+    </recipeUsers>
+    <researchPrerequisite>InsulationBiomass</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hay</li>
+            <li MayRequire="dismarzero.VGP.VGPVegetableGarden,PrimitiveProduction.velcroboy333">VBY_BambooFiber</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <INSSlab_Biomass>5</INSSlab_Biomass>
+    </products>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>MakeBulk_INSSlab_Biomass</defName>
+    <label>Make Insulation slabs (biomass) in bulk</label>
+    <description>Make 25 Insulation slabs (biomass).</description>
+    <workAmount>1250</workAmount>
+    <jobString>Making insulation slabs.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <targetCountAdjustment>25</targetCountAdjustment>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Hay</li>
+        <li MayRequire="dismarzero.VGP.VGPVegetableGarden,PrimitiveProduction.velcroboy333">VBY_BambooFiber</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>TableButcher</li>
+      <li>ButcherSpot</li>
+    </recipeUsers>
+    <researchPrerequisite>InsulationBiomass</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hay</li>
+            <li MayRequire="dismarzero.VGP.VGPVegetableGarden,PrimitiveProduction.velcroboy333">VBY_BambooFiber</li>
+          </thingDefs>
+        </filter>
+        <count>125</count>
+      </li>
+    </ingredients>
+    <products>
+      <INSSlab_Biomass>25</INSSlab_Biomass>
+    </products>
+  </RecipeDef>
+</Defs>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ========== Pallets ================= -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>LWM's Deep Storage</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="LWM_Pallet" or defName="LWM_Pallet_Covered"]/building/fixedStorageSettings/filter/categories</xpath>
+          <value>
+            <li>INS_Insulation</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

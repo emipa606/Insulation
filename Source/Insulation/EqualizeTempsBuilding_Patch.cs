@@ -32,7 +32,13 @@ public class EqualizeTempsBuilding_Patch
                     }
 
                     num2 += room.Temperature;
+                    if (___beqRooms.Length <= num)
+                    {
+                        return false;
+                    }
+
                     ___beqRooms[num] = room;
+
                     num++;
                 }
             }
@@ -53,7 +59,13 @@ public class EqualizeTempsBuilding_Patch
                     }
 
                     num2 += room2.Temperature;
+                    if (___beqRooms.Length <= num)
+                    {
+                        return false;
+                    }
+
                     ___beqRooms[num] = room2;
+
                     num++;
                 }
             }
@@ -76,8 +88,14 @@ public class EqualizeTempsBuilding_Patch
             }
 
             var num4 = 1f;
+
             for (var k = 0; k < num; k++)
             {
+                if (___beqRooms.Length <= k)
+                {
+                    break;
+                }
+
                 if (___beqRooms[k].UsesOutdoorTemperature)
                 {
                     continue;
@@ -104,6 +122,11 @@ public class EqualizeTempsBuilding_Patch
 
             for (var l = 0; l < num; l++)
             {
+                if (___beqRooms.Length <= l)
+                {
+                    break;
+                }
+
                 if (___beqRooms[l].UsesOutdoorTemperature)
                 {
                     continue;

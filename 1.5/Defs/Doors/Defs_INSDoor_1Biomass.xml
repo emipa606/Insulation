@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="INSDoor_Base">
+    <defName>INSDoorSimple_Biomass</defName>
+    <label>Insulated Door (Biomass)</label>
+    <description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.2</Flammability>
+    </statBases>
+    <blockWind>true</blockWind>
+    <graphicData>
+      <texPath>Things/Building/Door/INSDoor_Biomass/INSDoorSimple_Biomass_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/INSDoor_Biomass/INSDoorSimple_Biomass_MenuIcon</uiIconPath>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/INSDoor_Biomass/INSDoor_Biomass_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <costStuffCount>20</costStuffCount>
+    <costList>
+      <INSSlab_Biomass>10</INSSlab_Biomass>
+    </costList>
+    <designationHotKey>Misc1</designationHotKey>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li Class="Insulation.CompProperties_BuildInsulation">
+        <HeatTransferFactor>0.75</HeatTransferFactor>
+        <InsulationStuff>true</InsulationStuff>
+        <HitPointsNeed>0.25</HitPointsNeed>
+      </li>
+    </comps>
+    <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>InsulationBiomass</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="INSDoor_Base">
+    <defName>INSDoor_Biomass</defName>
+    <label>Insulated Autodoor (Biomass)</label>
+    <description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+    <statBases>
+      <WorkToBuild>1250</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.2</Flammability>
+    </statBases>
+    <blockWind>true</blockWind>
+    <graphicData>
+      <texPath>Things/Building/Door/INSDoor_Biomass/INSDoor_Biomass_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Door/INSDoor_Biomass/INSDoor_Biomass_MenuIcon</uiIconPath>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Door/INSDoor_Biomass/INSDoor_Biomass_Blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <costList>
+      <Steel>30</Steel>
+      <INSSlab_Biomass>10</INSSlab_Biomass>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <costStuffCount>25</costStuffCount>
+    <techLevel>Industrial</techLevel>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Insulation.CompProperties_BuildInsulation">
+        <HeatTransferFactor>0.75</HeatTransferFactor>
+        <InsulationStuff>true</InsulationStuff>
+        <HitPointsNeed>0.25</HitPointsNeed>
+      </li>
+    </comps>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>InsulationBiomass</li>
+      <li>Autodoors</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>

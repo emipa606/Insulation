@@ -4,9 +4,8 @@ namespace Insulation;
 
 public class CompProperties_BuildInsulation : CompProperties
 {
+    public readonly float HeatTransferFactor = 1f;
     public bool FuelNeeded;
-
-    public float HeatTransferFactor = 1f;
 
     public float HitPointsNeed;
 
