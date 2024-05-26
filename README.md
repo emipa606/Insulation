@@ -1,23 +1,20 @@
-# Insulation
+# [Insulation (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2196454890)
 
 ![Image](https://i.imgur.com/buuPQel.png)
-
 Update of peladors mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2000755840
 
-- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2195733555]Doors Expanded
-- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2412682633]Secret Passage Doors
-- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=1971860929][JPT] Open The Windows
-- Added support for https://steamcommunity.com/workshop/filedetails/?id=1909914131]Save Our Ship 2 via CMaia
-- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=836308268]Dubs Bad Hygiene in all added SOS2 structures
-- Added support for https://steamcommunity.com/workshop/filedetails/?id=2012735237]Fertile Fields
-- Added support for BambooFiber from https://steamcommunity.com/sharedfiles/filedetails/?id=2327252470]Primitive Workbenches
+- Added support for [https://steamcommunity.com/sharedfiles/filedetails/?id=2195733555](Doors Expanded)
+- Added support for [https://steamcommunity.com/sharedfiles/filedetails/?id=2412682633](Secret Passage Doors)
+- Added support for [https://steamcommunity.com/sharedfiles/filedetails/?id=1971860929][JPT]( Open The Windows)
+- Added support for [https://steamcommunity.com/workshop/filedetails/?id=1909914131](Save Our Ship 2) via CMaia
+- Added support for [https://steamcommunity.com/sharedfiles/filedetails/?id=836308268](Dubs Bad Hygiene) in all added SOS2 structures
+- Added support for [https://steamcommunity.com/workshop/filedetails/?id=2012735237](Fertile Fields)
+- Added support for BambooFiber from [https://steamcommunity.com/sharedfiles/filedetails/?id=2327252470](Primitive Workbenches)
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
-
 
 # Overview
  V1.1
@@ -82,7 +79,7 @@ Includes a mod option to "tweak" the effectiveness of the insulation. This will 
 # Recommended
  *** subject to conversion ***
 
-https://steamcommunity.com/sharedfiles/filedetails/?id=1372003680]Replace Stuff - Uuugggg: Allows you to replace walls without having to deconstruct them first. Thus facilitating insulation being applied to existing walls with less impact to the rooms temperature balance during the refit.
+[https://steamcommunity.com/sharedfiles/filedetails/?id=1372003680](Replace Stuff) - Uuugggg: Allows you to replace walls without having to deconstruct them first. Thus facilitating insulation being applied to existing walls with less impact to the rooms temperature balance during the refit.
 
 (I will leave it to player discretion if they do not wish to use this mod for a higher degree of difficulty with the management and installation of structures and their related materials.)
 
@@ -107,16 +104,14 @@ Japanese translation - Proxyer
 ![Image](https://i.imgur.com/PwoNOj4.png)
 
 
-
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using [https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404](Uploader) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [https://github.com/RimSort/RimSort/releases/latest](RimSort) to sort your mods
 
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2196454890]![Image](https://img.shields.io/github/v/release/emipa606/Insulation?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
+[https://steamcommunity.com/sharedfiles/filedetails/changelog/2196454890]![Image]((https://img.shields.io/github/v/release/emipa606/Insulation?label=latest%20version&style=plastic&color=9f1111&labelColor=black))

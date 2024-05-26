@@ -1,5 +1,8 @@
 # Changelog for Insulation
 
+1.5.3 - Fixed the SOS2 patch for the new build
+
+
 1.5.2 - Fixed an overcomplicated wall-patch, should work better with vents now
 
 

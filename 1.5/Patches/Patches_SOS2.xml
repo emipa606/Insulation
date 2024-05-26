@@ -45,7 +45,7 @@
               <designationCategory>Ship</designationCategory>
               <placingDraggableDimensions>1</placingDraggableDimensions>
               <comps>
-                <li Class="CompProperties_SoShipPart">
+                <li Class="SaveOurShip2.CompProps_ShipCachePart">
                   <isHull>true</isHull>
                   <hermetic>true</hermetic>
                   <roof>true</roof>
@@ -84,8 +84,8 @@
                   <compClass>CompPowerTransmitter</compClass>
                   <transmitsPower>true</transmitsPower>
                 </li>
-                <li Class="CompProperties_ShipHeat">
-                  <compClass>CompShipHeat</compClass>
+                <li Class="SaveOurShip2.CompProps_ShipHeat">
+                  <compClass>SaveOurShip2.CompShipHeat</compClass>
                 </li>
               </comps>
             </ThingDef>
@@ -98,7 +98,7 @@
                 <Beauty>1</Beauty>
               </statBases>
               <comps>
-                <li Class="CompProperties_SoSUnlock">
+                <li Class="SaveOurShip2.CompProps_ResearchUnlock">
                   <unlock>ArchotechUplink</unlock>
                 </li>
               </comps>
@@ -116,7 +116,7 @@
                 <Beauty>1</Beauty>
               </statBases>
               <comps>
-                <li Class="CompProperties_SoSUnlock">
+                <li Class="SaveOurShip2.CompProps_ResearchUnlock">
                   <unlock>ArchotechUplink</unlock>
                 </li>
               </comps>
@@ -531,7 +531,7 @@
               <designatorDropdown>Ship_Airlocks</designatorDropdown>
               <description>Allows access to a ship or divides rooms inside it. Low-energy plasma barriers prevent gases from escaping.</description>
               <category>Building</category>
-              <thingClass>Building_ShipAirlock</thingClass>
+              <thingClass>SaveOurShip2.Building_ShipAirlock</thingClass>
               <designationCategory>Ship</designationCategory>
               <altitudeLayer>DoorMoveable</altitudeLayer>
               <fillPercent>1</fillPercent>
@@ -548,15 +548,15 @@
                   <basePowerConsumption>50</basePowerConsumption>
                   <transmitsPower>true</transmitsPower>
                 </li>
-                <li Class="CompProperties_SoShipPart">
+                <li Class="SaveOurShip2.CompProps_ShipCachePart">
                   <isHull>true</isHull>
                   <isPlating>true</isPlating>
                   <hermetic>true</hermetic>
                   <roof>true</roof>
                 </li>
                 <li Class="CompProperties_Forbiddable" />
-                <li Class="CompProperties_ShipHeat">
-                  <compClass>CompShipHeat</compClass>
+                <li Class="SaveOurShip2.CompProps_ShipHeat">
+                  <compClass>SaveOurShip2.CompShipHeat</compClass>
                 </li>
                 <li>
                   <compClass>CompColorable</compClass>
@@ -603,17 +603,17 @@
                   <basePowerConsumption>20</basePowerConsumption>
                   <transmitsPower>true</transmitsPower>
                 </li>
-                <li Class="CompProperties_SoShipPart">
+                <li Class="SaveOurShip2.CompProps_ShipCachePart">
                   <isHull>true</isHull>
                   <isPlating>true</isPlating>
                   <hermetic>true</hermetic>
                   <roof>true</roof>
                 </li>
                 <li Class="CompProperties_Forbiddable" />
-                <li Class="CompProperties_ShipHeat">
-                  <compClass>CompShipHeat</compClass>
+                <li Class="SaveOurShip2.CompProps_ShipHeat">
+                  <compClass>SaveOurShip2.CompShipHeat</compClass>
                 </li>
-                <li Class="CompProperties_SoSUnlock">
+                <li Class="SaveOurShip2.CompProps_ResearchUnlock">
                   <unlock>ArchotechUplink</unlock>
                 </li>
                 <li>

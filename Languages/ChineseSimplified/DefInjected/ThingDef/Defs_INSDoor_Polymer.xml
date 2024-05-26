@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <INSDoorSimple_Polymer.label>隔热门(高分子聚合材质)</INSDoorSimple_Polymer.label>
   <INSDoorSimple_Polymer.description>分隔房间的隔热门。只能手动开关，会减慢人的速度。到底有多慢取决于门的材质。</INSDoorSimple_Polymer.description>

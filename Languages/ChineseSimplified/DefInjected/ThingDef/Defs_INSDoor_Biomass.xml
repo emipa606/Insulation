@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <INSDoorSimple_Biomass.label>隔热门(有机材质)</INSDoorSimple_Biomass.label>
   <INSDoorSimple_Biomass.description>分隔房间的隔热门。只能手动开关，会减慢人的速度。到底有多慢取决于门的材质。</INSDoorSimple_Biomass.description>
