@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="DoorBase" Name="INSDoor_Base" Abstract="True">
     <designationCategory>Insulation_Desig</designationCategory>

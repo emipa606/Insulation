@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Insulation slab (polymers) -->
+  <INSSlab_Polymer.label>Insulation slab (polymers)</INSSlab_Polymer.label>
+  <!-- EN: Insulation material formed into a workable slab. Can be recycled for 50% chemfuel. -->
+  <INSSlab_Polymer.description>Insulation material formed into a workable slab. Can be recycled for 50% chemfuel.</INSSlab_Polymer.description>
+</LanguageData>

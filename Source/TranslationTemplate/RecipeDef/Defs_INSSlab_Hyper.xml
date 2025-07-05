@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make Insulation slabs (Hyper) -->
+  <Make_INSSlab_Hyper.label>Make Insulation slabs (Hyper)</Make_INSSlab_Hyper.label>
+  <!-- EN: Make 5 Insulation slabs (Hyper). -->
+  <Make_INSSlab_Hyper.description>Make 5 Insulation slabs (Hyper).</Make_INSSlab_Hyper.description>
+  <!-- EN: Making insulation slabs. -->
+  <Make_INSSlab_Hyper.jobString>Making insulation slabs.</Make_INSSlab_Hyper.jobString>
+  <!-- EN: Make Insulation slabs (Hyper) in bulk -->
+  <MakeBulk_INSSlab_Hyper.label>Make Insulation slabs (Hyper) in bulk</MakeBulk_INSSlab_Hyper.label>
+  <!-- EN: Make 25 Insulation slabs (Hyper). -->
+  <MakeBulk_INSSlab_Hyper.description>Make 25 Insulation slabs (Hyper).</MakeBulk_INSSlab_Hyper.description>
+  <!-- EN: Making insulation slabs. -->
+  <MakeBulk_INSSlab_Hyper.jobString>Making insulation slabs.</MakeBulk_INSSlab_Hyper.jobString>
+</LanguageData>

@@ -1,0 +1,124 @@
+ManifestFileVersion: 0
+CRC: 258290899
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8b58aba7fb16fd51271f43da1763be24
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8b58aba7fb16fd51271f43da1763be24
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Fibre/INSWall_Fibre_Atlas_Planks.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/Fibre_ShipBeam_Archotech_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/ArchoAirlockPolymer_UI.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Fibre/INSWall_FibreBricks_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Fibre_ShipBeamModular_north.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Biomass_ShipBeamArchotech_east.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/Polymer_ShipBeam_Unpowered_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Hyper_ShipBeamModular_north.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Biomass/INSWall_Biomass_Blueprint_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Biomass/INSDoor_Biomass_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/ArchoAirlockFibre_UI.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Item/INSSlab_Biomass/INSSlab_Biomass_c.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Hyper_ShipBeamArchotech_north.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Polymer/INSWall_Polymer_Atlas_Planks.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Biomass/INSWall_Biomass_Atlas_Smooth.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Hyper/INSWall_Hyper_Atlas_Smooth.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/AirlockPolymer_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/ArchoAirlockHyper_UI.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Polymer_ShipBeamModular_north.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Biomass_ShipBeamModular_north.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Polymer/INSWall_PolymerPlanks_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Fibre/INSWall_FibrePlanks_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Polymer/INSDoor_Polymer_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Biomass/INSWall_BiomassBricks_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/Hyper_ShipBeam_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/ArchoAirlockFibre_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Hyper/INSDoorSimple_Hyper_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Polymer/INSDoorSimple_Polymer_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Biomass_ShipBeamModular_east.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/RimeFeller/INSPolymerRefinery.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/AirlockPolymer_UI.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Hyper/INSDoor_Hyper_Blueprint.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Fibre/INSWall_Fibre_Blueprint_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Biomass/INSDoor_Biomass_Blueprint.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Fibre/INSDoorSimple_Fibre_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Biomass/INSWall_BiomassPlanks_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Item/INSSlab_Hyper/INSSlab_Hyper_a.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Item/INSSlab_Hyper/INSSlab_Hyper_b.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/ArchoAirlockHyper_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/Hyper_ShipBeam_Unpowered_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Hyper/INSDoor_Hyper_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Polymer/INSDoorSimple_Polymer_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/ArchoAirlockBiomass_UI.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Biomass_ShipBeamArchotech_north.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Polymer/INSWall_Polymer_Atlas_Bricks.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Item/INSSlab_Fibre/INSSlab_Fibre_c.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/AirlockFibre_UI.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Biomass/INSDoorSimple_Biomass_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Fibre/INSDoor_Fibre_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Fibre/INSWall_Fibre_Atlas_Smooth.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/ArchoAirlockPolymer_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Polymer/INSDoor_Polymer_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/Biomass_ShipBeam_Unpowered_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Fibre/INSDoor_Fibre_Blueprint.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Hyper/INSWall_HyperBricks_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Hyper/INSWall_Hyper_Atlas_Bricks.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Biomass/INSWall_Biomass_Atlas_Planks.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Hyper_ShipBeamArchotech_east.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Hyper/INSDoorSimple_Hyper_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Fibre/INSWall_Fibre_Atlas_Bricks.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Biomass/INSWall_Biomass_Atlas_Bricks.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/Fibre_ShipBeam_Unpowered_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Fibre_ShipBeamArchotech_east.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Fibre/INSDoor_Fibre_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Fibre_ShipBeamModular_east.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/AirlockHyper_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Item/INSSlab_Polymer/INSSlab_Polymer_b.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/Fibre_ShipBeam_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Polymer/INSWall_PolymerBricks_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Biomass/INSDoor_Biomass_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Polymer_ShipBeamArchotech_north.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Hyper_ShipBeamModular_east.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Item/INSSlab_Fibre/INSSlab_Fibre_a.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Item/INSSlab_Biomass/INSSlab_Biomass_b.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/AirlockBiomass_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/Polymer_ShipBeam_Archotech_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Polymer/INSWall_Polymer_Blueprint_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Item/INSSlab_Fibre/INSSlab_Fibre_b.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Item/INSSlab_Polymer/INSSlab_Polymer_c.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/AirlockBiomass_UI.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/ArchoAirlockBiomass_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Fibre_ShipBeamArchotech_north.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Fibre/INSWall_FibreSmooth_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Polymer_ShipBeamArchotech_east.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Hyper/INSWall_HyperSmooth_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Item/INSSlab_Polymer/INSSlab_Polymer_a.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Hyper/INSWall_Hyper_Atlas_Planks.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/Hyper_ShipBeam_Archotech_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/Polymer_ShipBeam_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Biomass/INSDoorSimple_Biomass_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/Biomass_ShipBeam_Archotech_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Polymer/INSWall_Polymer_Atlas_Smooth.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/AirlockFibre_Mover.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/Biomass_ShipBeam_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Hyper/INSDoor_Hyper_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Biomass/INSWall_BiomassSmooth_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Fibre/INSDoorSimple_Fibre_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/INSDoor_Polymer/INSDoor_Polymer_Blueprint.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Polymer/INSWall_PolymerSmooth_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Item/INSSlab_Hyper/INSSlab_Hyper_c.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Hyper/INSWall_Hyper_Blueprint_Atlas.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Hull/Polymer_ShipBeamModular_east.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Item/INSSlab_Biomass/INSSlab_Biomass_a.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Linked/INSWall_Hyper/INSWall_HyperPlanks_MenuIcon.png
+- Assets/Data/Mlie.Insulation/Textures/Things/Building/Door/SOS2/AirlockHyper_UI.png
+Dependencies: []

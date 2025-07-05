@@ -4,7 +4,7 @@ namespace Insulation;
 
 internal class RoofValues : DefModExtension
 {
-    public readonly float InsulationFactor = 1f;
+    private readonly float InsulationFactor = 1f;
 
     internal static float GetRVInsulationFactor(RoofDef rdef)
     {

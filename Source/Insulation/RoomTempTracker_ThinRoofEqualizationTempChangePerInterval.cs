@@ -4,10 +4,9 @@ using Verse;
 namespace Insulation;
 
 [HarmonyPatch(typeof(RoomTempTracker), "ThinRoofEqualizationTempChangePerInterval")]
-public class ThinRoofEqualizationTempChangePerInterval_Patch
+public class RoomTempTracker_ThinRoofEqualizationTempChangePerInterval
 {
-    [HarmonyPostfix]
-    public static void PostFix(ref float __result, Room ___room)
+    public static void Postfix(ref float __result, Room ___room)
     {
         var avgThinRate = InsulateUtility.GetAvgThinRate(___room);
         if (avgThinRate is > 0f and <= 1f)

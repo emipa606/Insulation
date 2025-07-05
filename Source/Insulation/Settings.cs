@@ -9,24 +9,24 @@ public class Settings : ModSettings
 
     public void DoWindowContents(Rect canvas)
     {
-        var listing_Standard = new Listing_Standard
+        var listingStandard = new Listing_Standard
         {
             ColumnWidth = canvas.width
         };
-        listing_Standard.Begin(canvas);
-        listing_Standard.Gap();
-        listing_Standard.Label("Insulation.pctEffective".Translate() + "  " + pctEffective);
-        pctEffective = checked((int)listing_Standard.Slider(pctEffective, 50f, 200f));
-        listing_Standard.Gap();
-        if (Controller.currentVersion != null)
+        listingStandard.Begin(canvas);
+        listingStandard.Gap();
+        listingStandard.Label("Insulation.pctEffective".Translate() + "  " + pctEffective);
+        pctEffective = checked((int)listingStandard.Slider(pctEffective, 50f, 200f));
+        listingStandard.Gap();
+        if (Controller.CurrentVersion != null)
         {
-            listing_Standard.Gap();
+            listingStandard.Gap();
             GUI.contentColor = Color.gray;
-            listing_Standard.Label("Insulation.Modversion".Translate(Controller.currentVersion));
+            listingStandard.Label("Insulation.Modversion".Translate(Controller.CurrentVersion));
             GUI.contentColor = Color.white;
         }
 
-        listing_Standard.End();
+        listingStandard.End();
     }
 
     public override void ExposeData()

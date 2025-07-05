@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <INSDoorSimple_Polymer.label>断熱ドア (ポリマー)</INSDoorSimple_Polymer.label>
   <INSDoorSimple_Polymer.description>部屋を隔てる断熱扉です。手動で開閉する必要があるので移動が遅くなります。どの程度遅くなるかはドアの材料によって決定されます。</INSDoorSimple_Polymer.description>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <INSDoorSimple_Biomass.label>隔熱門（有機材質）</INSDoorSimple_Biomass.label>
   <INSDoorSimple_Biomass.description>分隔房間的隔熱門。只能手動開關，會减慢人的速度。到底有多慢取決於門的材質。</INSDoorSimple_Biomass.description>

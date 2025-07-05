@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make Insulation slabs (fibres) -->
+  <Make_INSSlab_Fibre.label>Make Insulation slabs (fibres)</Make_INSSlab_Fibre.label>
+  <!-- EN: Make 5 Insulation slabs (fibres). -->
+  <Make_INSSlab_Fibre.description>Make 5 Insulation slabs (fibres).</Make_INSSlab_Fibre.description>
+  <!-- EN: Making insulation slabs. -->
+  <Make_INSSlab_Fibre.jobString>Making insulation slabs.</Make_INSSlab_Fibre.jobString>
+  <!-- EN: Make Insulation slabs (fibres) in bulk -->
+  <MakeBulk_INSSlab_Fibre.label>Make Insulation slabs (fibres) in bulk</MakeBulk_INSSlab_Fibre.label>
+  <!-- EN: Make 25 Insulation slabs (fibres). -->
+  <MakeBulk_INSSlab_Fibre.description>Make 25 Insulation slabs (fibres).</MakeBulk_INSSlab_Fibre.description>
+  <!-- EN: Making insulation slabs. -->
+  <MakeBulk_INSSlab_Fibre.jobString>Making insulation slabs.</MakeBulk_INSSlab_Fibre.jobString>
+  <!-- EN: Recycle Insulation slabs (fibres) -->
+  <Recycle_INSSlab_Fibre.label>Recycle Insulation slabs (fibres)</Recycle_INSSlab_Fibre.label>
+  <!-- EN: Recycle 5 Insulation slabs (fibres). -->
+  <Recycle_INSSlab_Fibre.description>Recycle 5 Insulation slabs (fibres).</Recycle_INSSlab_Fibre.description>
+  <!-- EN: Recycling insulation slabs. -->
+  <Recycle_INSSlab_Fibre.jobString>Recycling insulation slabs.</Recycle_INSSlab_Fibre.jobString>
+</LanguageData>

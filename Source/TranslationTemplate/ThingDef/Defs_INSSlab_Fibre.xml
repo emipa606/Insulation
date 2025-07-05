@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Burlap -->
+  <INS_Burlap.label>Burlap</INS_Burlap.label>
+  <!-- EN: Crude fabric woven from insulation fibers. Similar to cloth but with better insulating properties. -->
+  <INS_Burlap.description>Crude fabric woven from insulation fibers. Similar to cloth but with better insulating properties.</INS_Burlap.description>
+  <!-- EN: Insulation slab (fibres) -->
+  <INSSlab_Fibre.label>Insulation slab (fibres)</INSSlab_Fibre.label>
+  <!-- EN: Insulation material formed into a workable slab. Can be recycled to burlap. -->
+  <INSSlab_Fibre.description>Insulation material formed into a workable slab. Can be recycled to burlap.</INSSlab_Fibre.description>
+</LanguageData>

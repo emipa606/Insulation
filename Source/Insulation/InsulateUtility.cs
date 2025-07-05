@@ -7,9 +7,9 @@ namespace Insulation;
 
 public class InsulateUtility
 {
-    public static Dictionary<Room, float> CachedRoomWallRates;
-    public static Dictionary<Room, float> CachedRoomThinRates;
-    public static Dictionary<Room, float> CachedRoomDeepRates;
+    private static Dictionary<Room, float> CachedRoomWallRates;
+    private static Dictionary<Room, float> CachedRoomThinRates;
+    private static Dictionary<Room, float> CachedRoomDeepRates;
 
     public static float GetInsulationRate(Building b, float rate)
     {
@@ -101,7 +101,7 @@ public class InsulateUtility
         return newrate * 100f / Controller.Settings.pctEffective;
     }
 
-    public static bool IsBuildingWorking(Building b, bool PowerNeed, bool FuelNeed, bool RepairNeed,
+    private static bool IsBuildingWorking(Building b, bool PowerNeed, bool FuelNeed, bool RepairNeed,
         float HitPointsNeed)
     {
         if (PowerNeed)
@@ -142,10 +142,7 @@ public class InsulateUtility
 
     public static float GetAvgWallRate(Room roomToCheck)
     {
-        if (CachedRoomWallRates == null)
-        {
-            CachedRoomWallRates = new Dictionary<Room, float>();
-        }
+        CachedRoomWallRates ??= new Dictionary<Room, float>();
 
         if (CachedRoomWallRates.ContainsKey(roomToCheck) && GenTicks.TicksAbs % GenTicks.TickRareInterval != 0)
         {
@@ -203,10 +200,7 @@ public class InsulateUtility
 
     public static float GetAvgThinRate(Room roomToCheck)
     {
-        if (CachedRoomThinRates == null)
-        {
-            CachedRoomThinRates = new Dictionary<Room, float>();
-        }
+        CachedRoomThinRates ??= new Dictionary<Room, float>();
 
         if (CachedRoomThinRates.ContainsKey(roomToCheck) && GenTicks.TicksAbs % GenTicks.TickRareInterval != 0)
         {
@@ -232,7 +226,7 @@ public class InsulateUtility
                 continue;
             }
 
-            totalThinFactor += GetRoofInsulationFactor(roof, false);
+            totalThinFactor += GetRoofInsulationFactor(roof);
             totalThinCount++;
         }
 
@@ -247,10 +241,7 @@ public class InsulateUtility
 
     public static float GetAvgDeepRate(Room roomToCheck)
     {
-        if (CachedRoomDeepRates == null)
-        {
-            CachedRoomDeepRates = new Dictionary<Room, float>();
-        }
+        CachedRoomDeepRates ??= new Dictionary<Room, float>();
 
         if (CachedRoomDeepRates.ContainsKey(roomToCheck) && GenTicks.TicksAbs % GenTicks.TickRareInterval != 0)
         {
@@ -271,12 +262,12 @@ public class InsulateUtility
         foreach (var intVec in roomToCheck.Cells)
         {
             var roof = intVec.GetRoof(map);
-            if (roof == null || !roof.isThickRoof)
+            if (roof is not { isThickRoof: true })
             {
                 continue;
             }
 
-            totalDeepFactor += GetRoofInsulationFactor(roof, true);
+            totalDeepFactor += GetRoofInsulationFactor(roof);
             totalDeepCount++;
         }
 
@@ -289,7 +280,7 @@ public class InsulateUtility
         return AvgDeepRate;
     }
 
-    public static float GetRoofInsulationFactor(RoofDef roof, bool isThick)
+    private static float GetRoofInsulationFactor(RoofDef roof)
     {
         return RoofValues.GetRVInsulationFactor(roof);
     }
