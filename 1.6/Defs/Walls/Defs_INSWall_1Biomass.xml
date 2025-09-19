@@ -3,7 +3,7 @@
   <ThingDef ParentName="INSWall_Base">
     <defName>INSWall_Biomass</defName>
     <label>Insulated wall (Biomass)</label>
-    <description>An impassable wall, capable of holding up a roof. This wall is insulated with biomass.</description>
+    <description>An impassable wall, capable of holding up a roof. This wall is insulated with biomass having an insulation-value of 25%.</description>
     <graphicData>
       <texPath>Things/Building/Linked/INSWall_Biomass</texPath>
       <graphicClass>Graphic_Appearances</graphicClass>

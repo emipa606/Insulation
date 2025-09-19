@@ -3,7 +3,7 @@
   <ThingDef ParentName="INSWall_Base">
     <defName>INSWall_Polymer</defName>
     <label>Insulated wall (Polymers)</label>
-    <description>An impassable wall, capable of holding up a roof. This wall is insulated with synthetic polymers.</description>
+    <description>An impassable wall, capable of holding up a roof. This wall is insulated with synthetic polymers having an insulation-value of 80%.</description>
     <graphicData>
       <texPath>Things/Building/Linked/INSWall_Polymer</texPath>
       <graphicClass>Graphic_Appearances</graphicClass>

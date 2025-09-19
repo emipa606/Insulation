@@ -3,7 +3,7 @@
   <ThingDef ParentName="INSWall_Base">
     <defName>INSWall_Hyper</defName>
     <label>Insulated wall (Hyper)</label>
-    <description>An impassable wall, capable of holding up a roof. This wall is insulated with advanced materials.</description>
+    <description>An impassable wall, capable of holding up a roof. This wall is insulated with advanced materials having an insulation-value of 95%.</description>
     <graphicData>
       <texPath>Things/Building/Linked/INSWall_Hyper</texPath>
       <graphicClass>Graphic_Appearances</graphicClass>

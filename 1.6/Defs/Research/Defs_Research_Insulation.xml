@@ -7,7 +7,7 @@
   <ResearchProjectDef>
     <defName>InsulationBiomass</defName>
     <label>Insulation (Biomass)</label>
-    <description>Grants the ability to insulate walls and doors with biomass.</description>
+    <description>Grants the ability to insulate walls and doors with biomass, giving 25% insulation.</description>
     <baseCost>250</baseCost>
     <researchViewX>1</researchViewX>
     <researchViewY>1</researchViewY>
@@ -17,7 +17,7 @@
   <ResearchProjectDef>
     <defName>InsulationFibres</defName>
     <label>Insulation (Fibres)</label>
-    <description>Grants the ability to insulate walls and doors with fibres.</description>
+    <description>Grants the ability to insulate walls and doors with fibres, giving 60% insulation.</description>
     <baseCost>500</baseCost>
     <researchViewX>2</researchViewX>
     <researchViewY>1</researchViewY>
@@ -31,7 +31,7 @@
   <ResearchProjectDef>
     <defName>InsulationPolymers</defName>
     <label>Insulation (Polymers)</label>
-    <description>Grants the ability to insulate walls and doors with synthetic polymers.</description>
+    <description>Grants the ability to insulate walls and doors with synthetic polymers, giving 80% insulation.</description>
     <baseCost>750</baseCost>
     <researchViewX>3</researchViewX>
     <researchViewY>1</researchViewY>
@@ -45,7 +45,7 @@
   <ResearchProjectDef>
     <defName>InsulationHyper</defName>
     <label>Insulation (Hyper)</label>
-    <description>Grants the ability to insulate walls and doors with advanced materials.</description>
+    <description>Grants the ability to insulate walls and doors with advanced materials, giving 95% insulation.</description>
     <baseCost>1000</baseCost>
     <researchViewX>4</researchViewX>
     <researchViewY>1</researchViewY>

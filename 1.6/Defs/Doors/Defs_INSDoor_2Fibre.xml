@@ -3,7 +3,7 @@
   <ThingDef ParentName="INSDoor_Base">
     <defName>INSDoorSimple_Fibre</defName>
     <label>Insulated Door (Fibre)</label>
-    <description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+    <description>A fibre-insulated door that divides rooms and has an insulation-value of 60%. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
     <statBases>
       <WorkToBuild>1000</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
@@ -44,7 +44,7 @@
   <ThingDef ParentName="INSDoor_Base">
     <defName>INSDoor_Fibre</defName>
     <label>Insulated Autodoor (Fibre)</label>
-    <description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+    <description>A fibre-insulated door that divides rooms and has an insulation-value of 60%. Powered operation allows people to move through the door without slowing down.</description>
     <statBases>
       <WorkToBuild>1250</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>

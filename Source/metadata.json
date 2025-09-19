@@ -3,13 +3,13 @@
   "CanAdd": "0",
   "CanRemove": "2",
   "PreviewVersion": "1.6",
-  "LastXmlCleaning": "2025-07-16T15:14:36.5587583+02:00",
+  "LastXmlCleaning": "2025-09-19T20:52:41.1417175+02:00",
   "SocialImageSet": true,
   "Patches": true,
   "Defs": true,
   "Assemblies": true,
   "LinesOfCode": 14685,
-  "LinesOfXML": 120834,
+  "LinesOfXML": 121392,
   "SearchTags": [
     "thermal",
     " insulation"

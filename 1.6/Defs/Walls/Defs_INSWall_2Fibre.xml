@@ -3,7 +3,7 @@
   <ThingDef ParentName="INSWall_Base">
     <defName>INSWall_Fibre</defName>
     <label>Insulated wall (Fibres)</label>
-    <description>An impassable wall, capable of holding up a roof. This wall is insulated with fibres.</description>
+    <description>An impassable wall, capable of holding up a roof. This wall is insulated with fibres having an insulation-value of 60%.</description>
     <graphicData>
       <texPath>Things/Building/Linked/INSWall_Fibre</texPath>
       <graphicClass>Graphic_Appearances</graphicClass>
