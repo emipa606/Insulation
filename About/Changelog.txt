@@ -1,5 +1,8 @@
 # Changelog for Insulation
 
+1.6.3 - Fixed fertile fields plant scraps patch
+
+
 1.6.2 - Added insulation-values in the descriptions of walls, doors and research projects
 
 
