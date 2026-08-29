@@ -2,10 +2,10 @@
 <LanguageData>
   <!-- EN: Insulated Autodoor (Polymer) -->
   <INSDoor_Polymer.label>Insulated Autodoor (Polymer)</INSDoor_Polymer.label>
-  <!-- EN: An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down. -->
-  <INSDoor_Polymer.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Polymer.description>
+  <!-- EN: A polymer-insulated door that divides rooms and has an insulation-value of 80%. Powered operation allows people to move through the door without slowing down. -->
+  <INSDoor_Polymer.description>A polymer-insulated door that divides rooms and has an insulation-value of 80%. Powered operation allows people to move through the door without slowing down.</INSDoor_Polymer.description>
   <!-- EN: Insulated Door (Polymer) -->
   <INSDoorSimple_Polymer.label>Insulated Door (Polymer)</INSDoorSimple_Polymer.label>
-  <!-- EN: An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of. -->
-  <INSDoorSimple_Polymer.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Polymer.description>
+  <!-- EN: A polymer-insulated door that divides rooms and has an insulation-value of 80%. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of. -->
+  <INSDoorSimple_Polymer.description>A polymer-insulated door that divides rooms and has an insulation-value of 80%. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Polymer.description>
 </LanguageData>

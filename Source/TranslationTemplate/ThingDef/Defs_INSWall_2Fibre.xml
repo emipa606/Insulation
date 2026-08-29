@@ -2,6 +2,6 @@
 <LanguageData>
   <!-- EN: Insulated wall (Fibres) -->
   <INSWall_Fibre.label>Insulated wall (Fibres)</INSWall_Fibre.label>
-  <!-- EN: An impassable wall, capable of holding up a roof. This wall is insulated with fibres. -->
-  <INSWall_Fibre.description>An impassable wall, capable of holding up a roof. This wall is insulated with fibres.</INSWall_Fibre.description>
+  <!-- EN: An impassable wall, capable of holding up a roof. This wall is insulated with fibres having an insulation-value of 60%. -->
+  <INSWall_Fibre.description>An impassable wall, capable of holding up a roof. This wall is insulated with fibres having an insulation-value of 60%.</INSWall_Fibre.description>
 </LanguageData>

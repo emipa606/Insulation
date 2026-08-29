@@ -2,6 +2,6 @@
 <LanguageData>
   <!-- EN: Insulated wall (Biomass) -->
   <INSWall_Biomass.label>Insulated wall (Biomass)</INSWall_Biomass.label>
-  <!-- EN: An impassable wall, capable of holding up a roof. This wall is insulated with biomass. -->
-  <INSWall_Biomass.description>An impassable wall, capable of holding up a roof. This wall is insulated with biomass.</INSWall_Biomass.description>
+  <!-- EN: An impassable wall, capable of holding up a roof. This wall is insulated with biomass having an insulation-value of 25%. -->
+  <INSWall_Biomass.description>An impassable wall, capable of holding up a roof. This wall is insulated with biomass having an insulation-value of 25%.</INSWall_Biomass.description>
 </LanguageData>

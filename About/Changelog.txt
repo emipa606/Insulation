@@ -1,5 +1,8 @@
 # Changelog for Insulation
 
+1.6.4 - Updated chinese translation, thanks ylc395
+
+
 1.6.3 - Fixed fertile fields plant scraps patch
 
 

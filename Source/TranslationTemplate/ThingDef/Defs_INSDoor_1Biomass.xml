@@ -2,10 +2,10 @@
 <LanguageData>
   <!-- EN: Insulated Autodoor (Biomass) -->
   <INSDoor_Biomass.label>Insulated Autodoor (Biomass)</INSDoor_Biomass.label>
-  <!-- EN: An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down. -->
-  <INSDoor_Biomass.description>An insulated door that divides rooms. Powered operation allows people to move through the door without slowing down.</INSDoor_Biomass.description>
+  <!-- EN: A biomass-insulated door that divides rooms and has an insulation-value of 25%. Powered operation allows people to move through the door without slowing down. -->
+  <INSDoor_Biomass.description>A biomass-insulated door that divides rooms and has an insulation-value of 25%. Powered operation allows people to move through the door without slowing down.</INSDoor_Biomass.description>
   <!-- EN: Insulated Door (Biomass) -->
   <INSDoorSimple_Biomass.label>Insulated Door (Biomass)</INSDoorSimple_Biomass.label>
-  <!-- EN: An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of. -->
-  <INSDoorSimple_Biomass.description>An insulated door that divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Biomass.description>
+  <!-- EN: A biomass insulated door that divides rooms and has an insulation-value of 25%. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of. -->
+  <INSDoorSimple_Biomass.description>A biomass insulated door that divides rooms and has an insulation-value of 25%. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</INSDoorSimple_Biomass.description>
 </LanguageData>

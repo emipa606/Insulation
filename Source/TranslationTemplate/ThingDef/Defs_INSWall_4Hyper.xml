@@ -2,6 +2,6 @@
 <LanguageData>
   <!-- EN: Insulated wall (Hyper) -->
   <INSWall_Hyper.label>Insulated wall (Hyper)</INSWall_Hyper.label>
-  <!-- EN: An impassable wall, capable of holding up a roof. This wall is insulated with advanced materials. -->
-  <INSWall_Hyper.description>An impassable wall, capable of holding up a roof. This wall is insulated with advanced materials.</INSWall_Hyper.description>
+  <!-- EN: An impassable wall, capable of holding up a roof. This wall is insulated with advanced materials having an insulation-value of 95%. -->
+  <INSWall_Hyper.description>An impassable wall, capable of holding up a roof. This wall is insulated with advanced materials having an insulation-value of 95%.</INSWall_Hyper.description>
 </LanguageData>

@@ -2,18 +2,18 @@
 <LanguageData>
   <!-- EN: Insulation (Biomass) -->
   <InsulationBiomass.label>Insulation (Biomass)</InsulationBiomass.label>
-  <!-- EN: Grants the ability to insulate walls and doors with biomass. -->
-  <InsulationBiomass.description>Grants the ability to insulate walls and doors with biomass.</InsulationBiomass.description>
+  <!-- EN: Grants the ability to insulate walls and doors with biomass, giving 25% insulation. -->
+  <InsulationBiomass.description>Grants the ability to insulate walls and doors with biomass, giving 25% insulation.</InsulationBiomass.description>
   <!-- EN: Insulation (Fibres) -->
   <InsulationFibres.label>Insulation (Fibres)</InsulationFibres.label>
-  <!-- EN: Grants the ability to insulate walls and doors with fibres. -->
-  <InsulationFibres.description>Grants the ability to insulate walls and doors with fibres.</InsulationFibres.description>
+  <!-- EN: Grants the ability to insulate walls and doors with fibres, giving 60% insulation. -->
+  <InsulationFibres.description>Grants the ability to insulate walls and doors with fibres, giving 60% insulation.</InsulationFibres.description>
   <!-- EN: Insulation (Hyper) -->
   <InsulationHyper.label>Insulation (Hyper)</InsulationHyper.label>
-  <!-- EN: Grants the ability to insulate walls and doors with advanced materials. -->
-  <InsulationHyper.description>Grants the ability to insulate walls and doors with advanced materials.</InsulationHyper.description>
+  <!-- EN: Grants the ability to insulate walls and doors with advanced materials, giving 95% insulation. -->
+  <InsulationHyper.description>Grants the ability to insulate walls and doors with advanced materials, giving 95% insulation.</InsulationHyper.description>
   <!-- EN: Insulation (Polymers) -->
   <InsulationPolymers.label>Insulation (Polymers)</InsulationPolymers.label>
-  <!-- EN: Grants the ability to insulate walls and doors with synthetic polymers. -->
-  <InsulationPolymers.description>Grants the ability to insulate walls and doors with synthetic polymers.</InsulationPolymers.description>
+  <!-- EN: Grants the ability to insulate walls and doors with synthetic polymers, giving 80% insulation. -->
+  <InsulationPolymers.description>Grants the ability to insulate walls and doors with synthetic polymers, giving 80% insulation.</InsulationPolymers.description>
 </LanguageData>

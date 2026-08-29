@@ -116,4 +116,4 @@ Japanese translation - Proxyer
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/Insulation?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2196454890) | tags: thermal,   insulation
+[![Image](https://img.shields.io/github/v/release/emipa606/Insulation?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2196454890) | insulation, thermal
