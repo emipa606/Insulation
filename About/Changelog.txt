@@ -1,5 +1,8 @@
 # Changelog for Insulation
 
+1.6.5 - Walls and doors should now be airtight depending on the material
+
+
 1.6.4 - Updated chinese translation, thanks ylc395
 
 

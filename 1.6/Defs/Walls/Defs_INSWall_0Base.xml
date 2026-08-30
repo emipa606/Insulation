@@ -18,5 +18,8 @@
       </li>
     </damageMultipliers>
     <designationHotKey>Misc3</designationHotKey>
+    <building>
+      <isStuffableAirtight>true</isStuffableAirtight>
+    </building>
   </ThingDef>
 </Defs>
